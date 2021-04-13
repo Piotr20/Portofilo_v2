@@ -17,6 +17,7 @@ module.exports = {
       current: "currentColor",
 
       black: "#171717",
+      "gray-custom": "#DADADA",
 
       white: colors.white,
       gray: colors.coolGray,
@@ -64,6 +65,10 @@ module.exports = {
       72: "18rem",
       80: "20rem",
       96: "24rem",
+      108: "26rem",
+      120: "30rem",
+      128: "34rem",
+      144: "40rem",
     },
     animation: {
       none: "none",
@@ -298,11 +303,14 @@ module.exports = {
       "2xl": ["1.5rem", { lineHeight: "2rem" }],
       "3xl": ["1.875rem", { lineHeight: "2.25rem" }],
       "4xl": ["2.25rem", { lineHeight: "2.5rem" }],
-      "5xl": ["3rem", { lineHeight: "1" }],
-      "6xl": ["4rem", { lineHeight: "1" }],
-      "7xl": ["4.5rem", { lineHeight: "1" }],
-      "8xl": ["6rem", { lineHeight: "1" }],
-      "9xl": ["8rem", { lineHeight: "1" }],
+      "5xl": ["3rem", { lineHeight: "1.3" }],
+      "6xl": ["4rem", { lineHeight: "1.3" }],
+      "7xl": ["4.5rem", { lineHeight: "1.3" }],
+      "8xl": ["6rem", { lineHeight: "1.3" }],
+      "9xl": ["8rem", { lineHeight: "1.3" }],
+      "10xl": ["10rem", { lineHeight: "1.3" }],
+      "11xl": ["12rem", { lineHeight: "1.3" }],
+      "12xl": ["14rem", { lineHeight: "1.3" }],
     },
     fontWeight: {
       thin: "100",

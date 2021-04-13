@@ -3,12 +3,32 @@
 @tailwind utilities;
 
 @layer base {
-  h2 {
-    @apply text-6xl md:text-7xl lg:text-9xl;
+  .container {
+    @apply mx-auto;
+  }
+  .anim-hero-title {
+    @apply -my-4 lg:-my-8;
   }
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+.anim-hero-title__content {
+  position: relative;
+  display: inline-block;
+  transform-origin: left center;
+}
+.sc-fzplWN {
+  display: none;
+}
+.iDvKRT {
+  display: none;
+}
+.box {
+  width: 40vw;
+  height: 60vh;
+  position: relative;
+  right: -40vw;
 }

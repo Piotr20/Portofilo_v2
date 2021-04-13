@@ -10,11 +10,11 @@ const MenuIcon = ({ open }) => {
         height="75"
         viewBox="0 0 200 200"
       >
-        <g stroke-width="6.5" stroke-linecap="round">
+        <g strokeWidth="6.5" strokeLinecap="round">
           <path
             d="M72 82.286h28.75"
             fill="#009100"
-            fill-rule="evenodd"
+            fillRule="evenodd"
             stroke="#171717"
           />
           <path
@@ -25,7 +25,7 @@ const MenuIcon = ({ open }) => {
           <path
             d="M72 125.143h28.75"
             fill="#009100"
-            fill-rule="evenodd"
+            fillRule="evenodd"
             stroke="#171717"
           />
           <path
@@ -36,13 +36,13 @@ const MenuIcon = ({ open }) => {
           <path
             d="M100.75 82.286h28.75"
             fill="#009100"
-            fill-rule="evenodd"
+            fillRule="evenodd"
             stroke="#171717"
           />
           <path
             d="M100.75 125.143h28.75"
             fill="#009100"
-            fill-rule="evenodd"
+            fillRule="evenodd"
             stroke="#171717"
           />
         </g>
