@@ -77,8 +77,9 @@ const LongTextBlock = () => {
             <span className="anim-hero-title__content">e</span>
           </div>
           <div className="anim-hero-title  overflow-hidden">
-            <span className="anim-hero-title__content">t</span>
+            <span className="anim-hero-title__content">f</span>
             <span className="anim-hero-title__content">o</span>
+            <span className="anim-hero-title__content">r</span>
           </div>
           <div className="anim-hero-title  overflow-hidden">
             <span className="anim-hero-title__content">d</span>

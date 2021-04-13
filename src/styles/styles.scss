@@ -27,8 +27,13 @@
   display: none;
 }
 .box {
-  width: 40vw;
-  height: 60vh;
+  width: 25vw;
+}
+.slider-container {
+  margin-left: calc(37.5vw - 7.2rem);
   position: relative;
-  right: -40vw;
+  right: -7.2rem;
+  &:nth-of-type(1) {
+    margin-left: 37.5vw;
+  }
 }
