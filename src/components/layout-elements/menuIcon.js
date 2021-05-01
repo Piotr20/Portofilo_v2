@@ -1,5 +1,5 @@
 import React from "react";
-import "../src/styles/menu.css";
+import "../../styles/menu.css";
 
 const MenuIcon = ({ open }) => {
   return (

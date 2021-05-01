@@ -14,9 +14,6 @@ const LongTextBlock = () => {
         markers: false,
         start: "-100%",
         end: "-30%",
-        // onUpdate: (self) => {
-        //   setScale(self.progress);
-        // },
       },
     });
     heroTextAnim.from(".anim-hero-title__content", {
@@ -30,7 +27,7 @@ const LongTextBlock = () => {
   }, []);
   return (
     <section className="container">
-      <div className="font-semibold my-32 ml-20 lg:mt-72 lg:mb-40 text-black text-6xl md:text-7xl lg:text-11xl xl:text-12xl">
+      <div className="font-semibold my-32 ml-20 lg:mt-72 text-black text-6xl md:text-7xl lg:text-11xl ">
         <h1 ref={sectionRef} className="hero-title">
           <div className="anim-hero-title overflow-hidden">
             <span className="anim-hero-title__content">I</span>
