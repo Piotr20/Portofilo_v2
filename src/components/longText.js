@@ -17,17 +17,18 @@ const LongTextBlock = () => {
       },
     });
     heroTextAnim.from(".anim-hero-title__content", {
-      stagger: 0.07,
+      stagger: 0.03,
       yPercent: 100,
       rotation: 15,
       opacity: 30,
       duration: 0.4,
+      delay: 0.5,
       ease: "power4.easeOut",
     });
   }, []);
   return (
-    <section className="container">
-      <div className="font-semibold my-32 ml-20 lg:mt-72 text-black text-6xl md:text-7xl lg:text-11xl ">
+    <section data-scroll-section className="container">
+      <div className="font-semibold mb-32 pt-32 ml-20 lg:pt-72 text-black text-6xl md:text-7xl lg:text-9xl 2xl:text-11xl ">
         <h1 ref={sectionRef} className="hero-title">
           <div className="anim-hero-title overflow-hidden">
             <span className="anim-hero-title__content">I</span>

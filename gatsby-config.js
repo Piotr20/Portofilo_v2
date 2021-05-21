@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: "Portfolio",
   },
+  flags: { PRESERVE_WEBPACK_CACHE: true },
   plugins: [
     "gatsby-plugin-sass",
     "gatsby-plugin-image",
@@ -10,6 +11,7 @@ module.exports = {
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     "gatsby-plugin-postcss",
+    `gatsby-plugin-transition-link`,
     {
       resolve: "gatsby-source-filesystem",
       options: {
