@@ -354,12 +354,12 @@ const HorizontalShowcase = () => {
       <div className="cursor-pointer font-semibold block w-full relative text-5xl lg:text-7xl xl:text-9xl lg:mt-12 xl:mt-0 ">
         <h2 className="work-title pointer-events-none z-10 text-white absolute bottom-1/5 left-1/5 transform -translate-x-1/4">
           <div className="anim-work-title overflow-hidden">
-            <span className="work-heading-1">S</span>
-            <span className="work-heading-1">i</span>
-            <span className="work-heading-1">g</span>
-            <span className="work-heading-1">u</span>
-            <span className="work-heading-1">n</span>
-            <span className="work-heading-1">a</span>
+            <span className="work-heading-4">S</span>
+            <span className="work-heading-4">i</span>
+            <span className="work-heading-4">g</span>
+            <span className="work-heading-4">u</span>
+            <span className="work-heading-4">n</span>
+            <span className="work-heading-4">a</span>
           </div>
         </h2>
         <h2 className="work-title pointer-events-none z-10 text-white absolute bottom-1/5 left-1/5 transform -translate-x-1/4">
@@ -385,21 +385,21 @@ const HorizontalShowcase = () => {
         </h2>
         <h2 className="work-title pointer-events-none z-10 text-white absolute bottom-1/5 left-1/5 transform -translate-x-1/4">
           <div className="anim-work-title overflow-hidden">
-            <span className="work-heading-4">B</span>
-            <span className="work-heading-4">i</span>
-            <span className="work-heading-4">l</span>
-            <span className="work-heading-4">l</span>
-            <span className="work-heading-4">i</span>
-            <span className="work-heading-4">g</span>
-            <span className="work-heading-4">&nbsp;a</span>
-            <span className="work-heading-4">n</span>
-            <span className="work-heading-4">i</span>
-            <span className="work-heading-4">m</span>
-            <span className="work-heading-4">a</span>
-            <span className="work-heading-4">t</span>
-            <span className="work-heading-4">i</span>
-            <span className="work-heading-4">o</span>
-            <span className="work-heading-4">n</span>
+            <span className="work-heading-1">B</span>
+            <span className="work-heading-1">i</span>
+            <span className="work-heading-1">l</span>
+            <span className="work-heading-1">l</span>
+            <span className="work-heading-1">i</span>
+            <span className="work-heading-1">g</span>
+            <span className="work-heading-1">&nbsp;a</span>
+            <span className="work-heading-1">n</span>
+            <span className="work-heading-1">i</span>
+            <span className="work-heading-1">m</span>
+            <span className="work-heading-1">a</span>
+            <span className="work-heading-1">t</span>
+            <span className="work-heading-1">i</span>
+            <span className="work-heading-1">o</span>
+            <span className="work-heading-1">n</span>
           </div>
         </h2>
         <CarouselProvider
@@ -416,18 +416,18 @@ const HorizontalShowcase = () => {
               className={``}
             >
               <div className="  h-2/3 w-1/3 relative  ">
-                <AniLink paintDrip hex="#3D59E9" to="/project-1">
+                <AniLink paintDrip hex="#3D59E9" to="/project-4">
                   <div className=" work-image-container  h-full relative z-1 image-reveal">
-                    <HeroImage company="siguna" />
+                    <HeroImage company="billig-animation" />
                   </div>
                 </AniLink>
 
                 <div className=" w-full h-1/2 absolute quoter-over-left top-1/2 transform -translate-y-1/2">
                   <ul className=" pl-12 text-white md:text-lg xl:text-2xl 2xl:text-3xl font-normal">
-                    <li className="py-1 work-project-info-1">CMS</li>
-                    <li className="py-1 work-project-info-1">UX design</li>
-                    <li className="py-1 work-project-info-1">Development</li>
-                    <li className="py-1 work-project-info-1">Animations</li>
+                    <li className="py-1 work-project-info-1">Rebranding</li>
+                    <li className="py-1 work-project-info-1"> Development</li>
+                    <li className="py-1 work-project-info-1">UX & UI design</li>
+                    <li className="py-1 work-project-info-1">Web animation</li>
                   </ul>
                   <div className="pl-12 flex pt-2 xl:pt-8 text-white text-3xl xl:text-4xl work-project-info-1">
                     <ButtonBack className="pr-4 xl:pr-6">
@@ -511,17 +511,17 @@ const HorizontalShowcase = () => {
               className={``}
             >
               <div className=" h-2/3 w-1/3 relative  ">
-                <AniLink paintDrip hex="#3D59E9" to="/project-4">
+                <AniLink paintDrip hex="#3D59E9" to="/project-1">
                   <div className="  work-image-container w-full h-full image-reveal">
-                    <HeroImage company="billig-animation" />
-                  </div>{" "}
+                    <HeroImage company="siguna" />
+                  </div>
                 </AniLink>
                 <div className=" w-full h-1/2 absolute quoter-over-left top-1/2 transform -translate-y-1/2">
                   <ul className=" pl-12 text-white md:text-lg xl:text-2xl 2xl:text-3xl font-normal">
-                    <li className="py-1 work-project-info-4">Rebranding</li>
+                    <li className="py-1 work-project-info-4">CMS</li>
+                    <li className="py-1 work-project-info-4">UX design</li>
                     <li className="py-1 work-project-info-4">Development</li>
-                    <li className="py-1 work-project-info-4">UX & UI design</li>
-                    <li className="py-1 work-project-info-4">Web animation</li>
+                    <li className="py-1 work-project-info-4">Animations</li>
                   </ul>
                   <div className="pl-12 flex pt-2 xl:pt-8 text-white text-3xl xl:text-4xl work-project-info-4">
                     <ButtonBack className="pr-4 xl:pr-6">

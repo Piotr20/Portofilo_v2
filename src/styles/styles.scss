@@ -9,6 +9,12 @@
   .anim-hero-title {
     @apply -my-4 lg:-my-8;
   }
+  h1,
+  h2,
+  h3,
+  p {
+    @apply text-black;
+  }
 }
 * {
   margin: 0;

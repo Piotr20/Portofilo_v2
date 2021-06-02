@@ -1,7 +1,11 @@
 import LocomotiveScroll from "locomotive-scroll";
 import "../styles/locomotiveScroll.css";
 import React, { useEffect, useRef } from "react";
-import AniLink from "gatsby-plugin-transition-link/AniLink";
+import Header from "../components/layout-elements/header";
+import Project3Intro from "../components/project-3-elements/project3Intro";
+import HeroImageArla from "../components/project-3-elements/heroImageArla";
+import Project3Content from "../components/project-3-elements/project3Content";
+import Project3Tools from "../components/project-3-elements/project3Tools";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
@@ -39,20 +43,12 @@ const Project3 = () => {
     ScrollTrigger.refresh();
   }, []);
   return (
-    <main ref={project1Ref}>
-      <div className=" w-full h-screen bg-red-600">
-        <h1 className="text-5xl">Page 3</h1>
-        <AniLink cover bg="#3D59E9" direction="bottom" to="/">
-          Go back with animation
-        </AniLink>
-        <a href="/">Go back home</a>
-      </div>
-      <div className=" w-full h-screen bg-green-600">
-        <AniLink cover bg="#3D59E9" direction="bottom" to="/">
-          Go back with animation
-        </AniLink>
-        <a href="/">Go back home</a>
-      </div>
+    <main ref={project1Ref} className="scrollContainer">
+      <Header />
+      <HeroImageArla />
+      <Project3Intro />
+      <Project3Content />
+      <Project3Tools />
     </main>
   );
 };
