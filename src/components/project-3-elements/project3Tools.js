@@ -1,12 +1,10 @@
 import React from "react";
-import {
-  SiSass,
-  SiJavascript,
-  SiAdobeillustrator,
-  SiAdobephotoshop,
-  SiAdobexd,
-} from "react-icons/si";
 
+import { SiSass } from "@react-icons/all-files/si/SiSass";
+import { SiJavascript } from "@react-icons/all-files/si/SiJavascript";
+import { SiAdobeillustrator } from "@react-icons/all-files/si/SiAdobeillustrator";
+import { SiAdobephotoshop } from "@react-icons/all-files/si/SiAdobephotoshop";
+import { SiAdobexd } from "@react-icons/all-files/si/SiAdobexd";
 const Project3Tools = () => {
   return (
     <section

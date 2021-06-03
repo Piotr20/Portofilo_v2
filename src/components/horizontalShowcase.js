@@ -9,7 +9,8 @@ import {
 import "pure-react-carousel/dist/react-carousel.es.css";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
+import { BsArrowLeft } from "@react-icons/all-files/bs/BsArrowLeft";
+import { BsArrowRight } from "@react-icons/all-files/bs/BsArrowRight";
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 import HeroImage from "./hero-image";
 gsap.registerPlugin(ScrollTrigger);
@@ -431,10 +432,10 @@ const HorizontalShowcase = () => {
                   </ul>
                   <div className="pl-12 flex pt-2 xl:pt-8 text-white text-3xl xl:text-4xl work-project-info-1">
                     <ButtonBack className="pr-4 xl:pr-6">
-                      <BsArrowLeft />
+                      <BsArrowLeft className="hover:text-custo-blue transition-colors duration-300" />
                     </ButtonBack>
                     <ButtonNext>
-                      <BsArrowRight />
+                      <BsArrowRight className="hover:text-custo-blue transition-colors duration-300" />
                     </ButtonNext>
                   </div>
                 </div>
@@ -463,10 +464,10 @@ const HorizontalShowcase = () => {
                   </ul>
                   <div className="pl-12 flex pt-2 xl:pt-8 text-white text-3xl xl:text-4xl work-project-info-2">
                     <ButtonBack className="pr-4 xl:pr-6">
-                      <BsArrowLeft />
+                      <BsArrowLeft className="hover:text-custo-blue transition-colors duration-300" />
                     </ButtonBack>
                     <ButtonNext>
-                      <BsArrowRight />
+                      <BsArrowRight className="hover:text-custo-blue transition-colors duration-300" />
                     </ButtonNext>
                   </div>
                 </div>
@@ -495,10 +496,10 @@ const HorizontalShowcase = () => {
                   </ul>
                   <div className="pl-12 flex pt-2 xl:pt-8 text-white text-3xl xl:text-4xl work-project-info-3">
                     <ButtonBack className="pr-4 xl:pr-6">
-                      <BsArrowLeft />
+                      <BsArrowLeft className="hover:text-custo-blue transition-colors duration-300" />
                     </ButtonBack>
                     <ButtonNext>
-                      <BsArrowRight />
+                      <BsArrowRight className="hover:text-custo-blue transition-colors duration-300" />
                     </ButtonNext>
                   </div>
                 </div>
@@ -511,7 +512,7 @@ const HorizontalShowcase = () => {
               className={``}
             >
               <div className=" h-2/3 w-1/3 relative  ">
-                <AniLink paintDrip hex="#3D59E9" to="/project-1">
+                <AniLink paintDrip hex="#3D59E9" to="/404">
                   <div className="  work-image-container w-full h-full image-reveal">
                     <HeroImage company="siguna" />
                   </div>
@@ -525,10 +526,10 @@ const HorizontalShowcase = () => {
                   </ul>
                   <div className="pl-12 flex pt-2 xl:pt-8 text-white text-3xl xl:text-4xl work-project-info-4">
                     <ButtonBack className="pr-4 xl:pr-6">
-                      <BsArrowLeft />
+                      <BsArrowLeft className="hover:text-custo-blue transition-colors duration-300" />
                     </ButtonBack>
                     <ButtonNext>
-                      <BsArrowRight />
+                      <BsArrowRight className="hover:text-custo-blue transition-colors duration-300" />
                     </ButtonNext>
                   </div>
                 </div>

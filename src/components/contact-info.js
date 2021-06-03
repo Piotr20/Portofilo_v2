@@ -14,7 +14,10 @@ const ContactInfo = () => {
           Email address:
         </h3>
         <ul className="text-lg 2xl:text-xl">
-          <a href="mailto:piotrpospiech00@gamil.com">
+          <a
+            className="underline-custom-hover hover:text-custo-blue transition-colors duration-300 inline-block py-1"
+            href="mailto:piotrpospiech00@gamil.com"
+          >
             <li className="contact-item-1">piotrpospiech00@gamil.com</li>
           </a>
         </ul>
@@ -23,11 +26,21 @@ const ContactInfo = () => {
         </h3>
         <ul className="text-lg 2xl:text-xl">
           <li className="contact-item-1">
-            <a href="tel:+45 91 95 31 33">+45 91 95 31 33 </a>
+            <a
+              className="underline-custom-hover hover:text-custo-blue transition-colors duration-300 inline-block py-1"
+              href="tel:+45 91 95 31 33"
+            >
+              +45 91 95 31 33
+            </a>
           </li>
 
           <li className="contact-item-1">
-            <a href="tel:+48 782 206 065">+48 782 206 065 </a>
+            <a
+              className="underline-custom-hover inline-block hover:text-custo-blue transition-colors duration-300 pb-1"
+              href="tel:+48 782 206 065"
+            >
+              +48 782 206 065
+            </a>
           </li>
         </ul>
       </div>
@@ -38,7 +51,7 @@ const ContactInfo = () => {
         <ul className="text-xl mt-4 md:mt-2 md:text-2xl ">
           <li className="contact-item-2">
             <a
-              className="pb-1 underline-custom"
+              className="pb-1 underline-custom-hover-blue transition-colors duration-300 hover:text-custo-blue"
               href="https://www.linkedin.com/in/piotr-pospiech/"
             >
               Linkedin
@@ -47,7 +60,7 @@ const ContactInfo = () => {
 
           <li className="contact-item-2 pt-1">
             <a
-              className="pb-1 underline-custom"
+              className="pb-1 underline-custom-hover-blue transition-colors duration-300 hover:text-custo-blue"
               href="https://www.instagram.com/pjooter.p/"
             >
               Instagram
@@ -56,7 +69,7 @@ const ContactInfo = () => {
 
           <li className="contact-item-2 pt-1">
             <a
-              className="pb-1 underline-custom"
+              className="pb-1 underline-custom-hover-blue transition-colors duration-300 hover:text-custo-blue"
               href="https://www.facebook.com/piotr.pospiech.52/"
             >
               Facebook

@@ -1,11 +1,17 @@
 import React from "react";
-import {
-  SiSass,
-  SiJavascript,
-  SiAdobeillustrator,
-  SiAdobephotoshop,
-  SiAdobexd,
-} from "react-icons/si";
+import { SiSass } from "@react-icons/all-files/si/SiSass";
+import { SiAdobeillustrator } from "@react-icons/all-files/si/SiAdobeillustrator";
+import { SiAdobephotoshop } from "@react-icons/all-files/si/SiAdobephotoshop";
+import { SiAdobexd } from "@react-icons/all-files/si/SiAdobexd";
+import { SiTailwindcss } from "@react-icons/all-files/si/SiTailwindcss";
+import { SiGreensock } from "@react-icons/all-files/si/SiGreensock";
+import { FaReact } from "@react-icons/all-files/fa/FaReact";
+import { GrGatsbyjs } from "@react-icons/all-files/gr/GrGatsbyjs";
+import { GrWordpress } from "@react-icons/all-files/gr/GrWordpress";
+import { FiFigma } from "@react-icons/all-files/fi/FiFigma";
+import { SiAdobeaftereffects } from "@react-icons/all-files/si/SiAdobeaftereffects";
+import { SiWebpack } from "@react-icons/all-files/si/SiWebpack";
+import { SiNpm } from "@react-icons/all-files/si/SiNpm";
 
 const Project4Tools = () => {
   return (
@@ -17,20 +23,43 @@ const Project4Tools = () => {
         Used tools:
       </h2>
       <div className="w-10/12 2xl:w-8/12 grid grid-cols-3 gap-3 justify-items-center md:flex md:flex-wrap md:justify-center  pb-12 md:pb-24">
-        <div lassName="self-center">
-          <SiJavascript className="toolkit-item w-16 h-16 2xl:w-20 2xl:h-20" />
+        <div className="self-center">
+          <FaReact className="toolkit-item w-16 h-16 2xl:w-20 2xl:h-20" />
         </div>
-        <div lassName="self-center">
+        <div className="self-center">
+          <GrGatsbyjs className="toolkit-item w-16 h-16 2xl:w-20 2xl:h-20" />
+        </div>
+        <div className="self-center">
+          <GrWordpress className="toolkit-item w-16 h-16 2xl:w-20 2xl:h-20" />
+        </div>
+        <div className="self-center">
+          <SiGreensock className="toolkit-item w-16 h-16 2xl:w-20 2xl:h-20" />
+        </div>
+        <div className="self-center">
+          <SiTailwindcss className="toolkit-item w-16 h-16 2xl:w-20 2xl:h-20" />
+        </div>
+        <div className="self-center">
           <SiSass className="toolkit-item w-16 h-16 2xl:w-20 2xl:h-20" />
         </div>
-
-        <div lassName="self-center">
+        <div className="self-center">
+          <SiWebpack className="toolkit-item w-16 h-16 2xl:w-20 2xl:h-20" />
+        </div>
+        <div className="self-center">
+          <SiNpm className="toolkit-item w-16 h-16 2xl:w-20 2xl:h-20" />
+        </div>
+        <div className="self-center">
+          <FiFigma className="toolkit-item w-16 h-16 2xl:w-20 2xl:h-20" />
+        </div>
+        <div className="self-center">
           <SiAdobeillustrator className="toolkit-item w-16 h-16 2xl:w-20 2xl:h-20" />
         </div>
-        <div lassName="self-center">
+        <div className="self-center">
           <SiAdobephotoshop className="toolkit-item w-16 h-16 2xl:w-20 2xl:h-20" />
         </div>
-        <div lassName="self-center">
+        <div className="self-center">
+          <SiAdobeaftereffects className="toolkit-item w-16 h-16 2xl:w-20 2xl:h-20" />
+        </div>
+        <div className="self-center">
           <SiAdobexd className="toolkit-item w-16 h-16 2xl:w-20 2xl:h-20" />
         </div>
       </div>

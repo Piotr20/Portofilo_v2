@@ -1,6 +1,7 @@
 import React from "react";
 import Container from "../layout-elements/container";
-import { BsArrowRight } from "react-icons/bs";
+
+import { BsArrowRight } from "@react-icons/all-files/bs/BsArrowRight";
 
 const Project3Intro = () => {
   return (
@@ -59,14 +60,15 @@ const Project3Intro = () => {
             </ul>
           </div>
         </div>
-        <div className="py-2 lg:py-4">
-          <h3 className="font-semibold text-3xl 2xl:text-4xl">
-            View prototype
-          </h3>
+        <div className="py-2 lg:py-4 group">
           <a
-            className="inline-block"
+            className="inline-block group-hover:text-custo-blue transition-colors duration-300"
             href="https://xd.adobe.com/view/864f31be-5aba-4872-99cb-14c97e09827a-d31c/"
           >
+            <h3 className="font-semibold text-3xl 2xl:text-4xl group-hover:text-custo-blue transition-colors duration-300">
+              View prototype
+            </h3>
+
             <p className="md:hidden pt-2 text-lg underline-custom">
               Click here
             </p>

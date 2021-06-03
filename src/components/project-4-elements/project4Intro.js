@@ -1,7 +1,7 @@
 import React from "react";
 import Container from "../layout-elements/container";
-import { BsArrowRight } from "react-icons/bs";
 
+import { BsArrowRight } from "@react-icons/all-files/bs/BsArrowRight";
 const Project4Intro = () => {
   return (
     <section data-scroll-section>
@@ -60,12 +60,15 @@ const Project4Intro = () => {
             </ul>
           </div>
         </div>
-        <div className="py-2 lg:py-4">
-          <h3 className="font-semibold text-3xl 2xl:text-4xl">View site</h3>
+        <div className="py-2 lg:py-4 group">
           <a
-            className="inline-block"
+            className="inline-block group-hover:text-custo-blue transition-colors duration-300"
             href="https://billig-animation.piotrpospiech.com/"
           >
+            <h3 className="font-semibold text-3xl group-hover:text-custo-blue transition-colors duration-300  2xl:text-4xl">
+              View site
+            </h3>
+
             <p className="md:hidden pt-2 text-lg underline-custom">
               Click here
             </p>

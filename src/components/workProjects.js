@@ -20,7 +20,7 @@ const WorkProjects = () => {
           </p>
         </div>
         <div className="py-12 project-container-1 md:py-0 lg:row-start-4 lg:row-span-2">
-          <AniLink paintDrip hex="#3D59E9" to="/project-1">
+          <AniLink paintDrip hex="#3D59E9" to="/404">
             <div className=" work-image-container project-item-1 relative z-1 ">
               <HeroImage company="siguna" />
             </div>

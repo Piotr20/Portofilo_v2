@@ -31,15 +31,17 @@ const AboutIntro = () => {
           <h1 className="self-start text-4xl md:text-5xl xl:text-6xl xl:leading-snug font-bold -mt-18 xl:-mt-24 lg:mb-40 xl:mb-1/2">
             About <br /> me
           </h1>
-          <p className="px-2 mt-8 self-center lg:w-3/5 text-lg md:text-xl 2xl:text-2xl">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}
-          </p>
-          <p className="px-2 mb-12 self-center lg:w-3/5 lg:pt-8 text-lg md:text-xl 2xl:text-2xl">
-            Varius consequat malesuada ullamcorper consequat pellentesque
-            pharetra, urna, blandit. Nunc at cras diam urna. Tincidunt faucibus
-            nibh at gravida eu sit. Donec justo, id scelerisque neque. Eget sit
-            ullamcorper amet nec vulputate metus odio vulputate faucibus. Congue
-            rutrum luctus proin ultrices tellus facilisi molestie.
+          <p className="px-2 my-8 md:mt-0 self-center lg:w-3/5 text-lg md:text-xl 2xl:text-2xl">
+            My name is Piotr Pospiech and I come from Poland. I am frontend
+            developer with a passion to design and animation. I moved to Denmark
+            in 2019 and started my education at Business Academy Aarhus.
+            <br />
+            <br /> During my educations I worked with different languages but
+            the forntend is what makes me happy to code every day. What I enjoy
+            much as well is design in all sorts of forms which can be seen in my
+            approach to the projects either professional or private. <br />
+            <br /> I find myself useful in all sorts of position but the one I
+            like the most is working alongside designers and developers.
           </p>
         </div>
         <div className="w-full md:w-2/5">

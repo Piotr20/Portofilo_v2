@@ -1,23 +1,24 @@
 import React from "react";
-import {
-  FaReact,
-  FaVuejs,
-  FaGulp,
-  FaInvision,
-  FaBootstrap,
-} from "react-icons/fa";
-import { GrGatsbyjs, GrWordpress } from "react-icons/gr";
-import {
-  SiTypescript,
-  SiSass,
-  SiWebgl,
-  SiFirebase,
-  SiTailwindcss,
-  SiPostcss,
-  SiAdobecreativecloud,
-  SiGreensock,
-} from "react-icons/si";
-import { FiFigma } from "react-icons/fi";
+
+import { SiSass } from "@react-icons/all-files/si/SiSass";
+import { SiJavascript } from "@react-icons/all-files/si/SiJavascript";
+import { SiTypescript } from "@react-icons/all-files/si/SiTypescript";
+import { SiWebgl } from "@react-icons/all-files/si/SiWebgl";
+import { SiFirebase } from "@react-icons/all-files/si/SiFirebase";
+import { SiTailwindcss } from "@react-icons/all-files/si/SiTailwindcss";
+import { SiPostcss } from "@react-icons/all-files/si/SiPostcss";
+import { SiAdobecreativecloud } from "@react-icons/all-files/si/SiAdobecreativecloud";
+import { SiGreensock } from "@react-icons/all-files/si/SiGreensock";
+import { FaReact } from "@react-icons/all-files/fa/FaReact";
+import { FaVuejs } from "@react-icons/all-files/fa/FaVuejs";
+import { FaGulp } from "@react-icons/all-files/fa/FaGulp";
+import { FaInvision } from "@react-icons/all-files/fa/FaInvision";
+import { FaBootstrap } from "@react-icons/all-files/fa/FaBootstrap";
+import { GrGatsbyjs } from "@react-icons/all-files/gr/GrGatsbyjs";
+import { GrWordpress } from "@react-icons/all-files/gr/GrWordpress";
+import { SiWebpack } from "@react-icons/all-files/si/SiWebpack";
+import { SiNpm } from "@react-icons/all-files/si/SiNpm";
+import { FiFigma } from "@react-icons/all-files/fi/FiFigma";
 
 const MyToolkit = () => {
   return (
@@ -28,53 +29,62 @@ const MyToolkit = () => {
       <h2 className="text-3xl md:text-4xl xl:text-5xl font-bold text-center py-4 lg:py-8">
         My toolkit
       </h2>
-      <div className="w-10/12 2xl:w-8/12 grid grid-cols-3 gap-3 justify-items-center md:flex md:flex-wrap md:justify-center  pb-12 md:pb-24">
+      <div className="w-10/12 2xl:w-8/12 grid grid-cols-3 gap-3 justify-items-center md:flex md:flex-wrap md:justify-center items-center  pb-12 md:pb-24">
         <div className="self-center">
           <FaReact className=" toolkit-item h-16 w-16 2xl:w-24 2xl:h-24" />
         </div>
-        <div lassName=" self-center ">
+        <div className=" self-center ">
           <FaVuejs className="toolkit-item w-16 h-16 2xl:w-20 2xl:h-20" />
         </div>
-        <div lassName=" self-center">
+        <div className=" self-center">
           <GrGatsbyjs className=" toolkit-item w-16 h-16 2xl:w-20 2xl:h-20" />
         </div>
-        <div lassName="self-center">
+        <div className="self-center">
           <SiTypescript className="toolkit-item w-16 h-16 2xl:w-20 2xl:h-20" />
         </div>
-        <div lassName="self-center">
+        <div className="self-center">
+          <SiJavascript className="toolkit-item w-16 h-16 2xl:w-20 2xl:h-20" />
+        </div>
+        <div className="self-center">
           <SiSass className="toolkit-item w-16 h-16 2xl:w-20 2xl:h-20" />
         </div>
-        <div lassName=" self-center">
+        <div className=" self-center">
           <SiTailwindcss className="toolkit-item w-16 h-16 2xl:w-20 2xl:h-20" />
         </div>
-        <div lassName="self-center">
+        <div className="self-center">
           <SiGreensock className="toolkit-item w-16 h-16 2xl:w-20 2xl:h-20" />
         </div>
-        <div lassName="self-center">
+        <div className="self-center">
           <GrWordpress className="toolkit-item w-16 h-16 2xl:w-20 2xl:h-20" />
         </div>
-        <div lassName="self-center">
+        <div className="self-center">
           <SiWebgl className="toolkit-item  w-16 h-16 2xl:w-20 2xl:h-20" />
         </div>
-        <div lassName=" self-center">
+        <div className=" self-center">
           <SiFirebase className=" toolkit-item w-16 h-16 2xl:w-20 2xl:h-20" />
         </div>
-        <div lassName=" self-center">
+        <div className=" self-center">
           <SiPostcss className=" toolkit-item w-16 h-16 2xl:w-20 2xl:h-20" />
         </div>
-        <div lassName=" self-center">
+        <div className="self-center">
+          <SiWebpack className="toolkit-item w-16 h-16 2xl:w-20 2xl:h-20" />
+        </div>
+        <div className="self-center">
+          <SiNpm className="toolkit-item w-16 h-16 2xl:w-20 2xl:h-20" />
+        </div>
+        <div className=" self-center">
           <FaGulp className=" toolkit-item w-16 h-16 2xl:w-20 2xl:h-20" />
         </div>
-        <div lassName="self-center">
+        <div className="self-center">
           <FaBootstrap className="toolkit-item w-16 h-16 2xl:w-20 2xl:h-20" />
         </div>
-        <div lassName="self-center">
+        <div className="self-center">
           <FaInvision className="toolkit-item w-16 h-16 2xl:w-20 2xl:h-20" />
         </div>
-        <div lassName="self-center">
+        <div className="self-center">
           <SiAdobecreativecloud className="toolkit-item w-16 h-16 2xl:w-20 2xl:h-20" />
         </div>
-        <div lassName="self-center">
+        <div className="self-center">
           <FiFigma className="toolkit-item w-16 h-16 2xl:w-20 2xl:h-20" />
         </div>
       </div>

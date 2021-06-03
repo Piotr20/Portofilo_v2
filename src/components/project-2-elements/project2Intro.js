@@ -1,6 +1,7 @@
 import React from "react";
 import Container from "../layout-elements/container";
-import { BsArrowRight } from "react-icons/bs";
+
+import { BsArrowRight } from "@react-icons/all-files/bs/BsArrowRight";
 
 const Project2Intro = () => {
   return (
@@ -56,13 +57,19 @@ const Project2Intro = () => {
             </ul>
           </div>
         </div>
-        <div className="py-2 lg:py-4">
-          <h3 className="font-semibold text-3xl 2xl:text-4xl">View site</h3>
-          <a className="inline-block" href="https://smokepins.dk/">
-            <p className="md:hidden pt-2 text-lg underline-custom">
+        <div className="py-2 lg:py-4 group ">
+          <a
+            className="inline-block group-hover:text-custo-blue transition-colors duration-300 "
+            href="https://smokepins.dk/"
+          >
+            <h3 className="font-semibold group-hover:text-custo-blue transition-colors duration-300  text-3xl 2xl:text-4xl">
+              View site
+            </h3>
+
+            <p className="md:hidden  pt-2 text-lg underline-custom">
               Click here
             </p>
-            <BsArrowRight className="hidden md:block w-12 h-12 transform scale-x-150" />
+            <BsArrowRight className="hidden md:block w-12 h-12 transform scale-x-150 " />
           </a>
         </div>
       </Container>

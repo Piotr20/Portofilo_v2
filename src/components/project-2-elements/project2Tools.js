@@ -1,15 +1,13 @@
 import React from "react";
-import { FaInvision } from "react-icons/fa";
-import { GrWordpress } from "react-icons/gr";
-import {
-  SiSass,
-  SiJavascript,
-  SiAdobeillustrator,
-  SiAdobephotoshop,
-  SiAdobexd,
-  SiJquery,
-} from "react-icons/si";
 
+import { GrWordpress } from "@react-icons/all-files/gr/GrWordpress";
+import { FaInvision } from "@react-icons/all-files/fa/FaInvision";
+import { SiSass } from "@react-icons/all-files/si/SiSass";
+import { SiJavascript } from "@react-icons/all-files/si/SiJavascript";
+import { SiAdobeillustrator } from "@react-icons/all-files/si/SiAdobeillustrator";
+import { SiAdobephotoshop } from "@react-icons/all-files/si/SiAdobephotoshop";
+import { SiAdobexd } from "@react-icons/all-files/si/SiAdobexd";
+import { SiJquery } from "@react-icons/all-files/si/SiJquery";
 const Project2Tools = () => {
   return (
     <section

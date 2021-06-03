@@ -84,6 +84,7 @@ const IndexPage = () => {
       duration: 0.2,
       ease: "power4.easeOut",
     });
+
     gsap.to(".nav-link", {
       scrollTrigger: {
         trigger: ".showcase-container",
@@ -96,6 +97,7 @@ const IndexPage = () => {
       duration: 0.2,
       ease: "power4.easeOut",
     });
+
     gsap.from(".about-me-item", {
       scrollTrigger: {
         trigger: ".about-me-container",
@@ -138,6 +140,10 @@ const IndexPage = () => {
 
     // after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
     ScrollTrigger.refresh();
+    const scrollContainer = document.querySelector(".scrollContainer");
+    scrollContainer.addEventListener("mousemove", () => {
+      console.log(scrollContainer.getBoundingClientRect());
+    });
   }, []);
   return (
     <main ref={scrollRef} className="scrollContainer">
