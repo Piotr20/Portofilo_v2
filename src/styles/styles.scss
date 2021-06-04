@@ -132,4 +132,6 @@
   transform: translate(-50%, -50%);
   border: 2px solid #3d59e9;
   border-radius: 50%;
+  transition: all 0.2s ease-out;
+  transition-delay: 0.1s;
 }
