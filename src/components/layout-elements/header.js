@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import MenuIcon from "./menuIcon";
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 import Link from "gatsby-link";
+import Logo from "./logo";
 
 const Header = () => {
   useEffect(() => {}, []);
@@ -11,14 +12,14 @@ const Header = () => {
     <header
       className={`flex w-full fixed z-50 pointer-events-none justify-between items-start lg:items-center`}
     >
-      <div className="w-18 pointer-events-auto h-24 md:w-20 md:h-26 xl:w-24 xl:h-30 bg-black flex items-center justify-center">
+      <div className="w-17 pointer-events-auto h-24 md:w-20 md:h-26 xl:w-24 xl:h-30 bg-black flex items-center justify-center">
         <AniLink
           paintDrip
           hex="#3D59E9"
-          className="text-white nav-link pointer-events-auto "
+          className="text-white nav-link pointer-events-auto"
           to="/"
         >
-          Hello
+          <Logo />
         </AniLink>
       </div>
       <nav className="hidden lg:flex lg:mr-12 xl:mr-20 md:text-xl xl:text-2xl ">

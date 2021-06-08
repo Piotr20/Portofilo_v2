@@ -342,7 +342,7 @@ const HorizontalShowcase = () => {
       data-scroll-section
       data-scroll-sticky
       data-scroll-target
-      className="w-full showcase-container md:h-screen-75 xl:h-screen bg-black flex-col  hidden md:flex"
+      className="w-full showcase-container bg-black flex-col  hidden md:flex"
     >
       <h2
         ref={showcaseRef}

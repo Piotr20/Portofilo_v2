@@ -27,7 +27,7 @@ const PersonIntro = () => {
       className="container w-full flex flex-col-reverse md:flex-row pt-12 md:py-36 lg:max-w-4xl xl:max-w-screen-xl 2xl:max-w-screen-2xl items-center justify-between"
     >
       <div className=" pt-12 md:pt-0 w-full md:w-1/2">
-        <h2 className=" text-3xl md:text-4xl xl:text-5xl xl:leading-10 2xl:text-6xl 2xl:leading-tight text-center md:text-left font-semibold  ">
+        <h2 className=" text-3xl md:text-4xl xl:text-5xl xl:leading-tight 2xl:text-6xl 2xl:leading-tight text-center md:text-left font-semibold  ">
           Hi I’m Piotr <br />
           Frontend <span className="text-white outlined-text">developer</span>,
           <br />
