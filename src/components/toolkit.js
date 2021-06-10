@@ -16,7 +16,6 @@ import { FaInvision } from "@react-icons/all-files/fa/FaInvision";
 import { FaBootstrap } from "@react-icons/all-files/fa/FaBootstrap";
 import { GrGatsbyjs } from "@react-icons/all-files/gr/GrGatsbyjs";
 import { GrWordpress } from "@react-icons/all-files/gr/GrWordpress";
-import { SiWebpack } from "@react-icons/all-files/si/SiWebpack";
 import { SiNpm } from "@react-icons/all-files/si/SiNpm";
 import { FiFigma } from "@react-icons/all-files/fi/FiFigma";
 
@@ -65,9 +64,6 @@ const MyToolkit = () => {
         </div>
         <div className=" self-center">
           <SiPostcss className=" toolkit-item w-16 h-16 2xl:w-20 2xl:h-20" />
-        </div>
-        <div className="self-center">
-          <SiWebpack className="toolkit-item w-16 h-16 2xl:w-20 2xl:h-20" />
         </div>
         <div className="self-center">
           <SiNpm className="toolkit-item w-16 h-16 2xl:w-20 2xl:h-20" />
