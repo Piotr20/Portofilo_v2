@@ -97,6 +97,18 @@ const IndexPage = () => {
       duration: 0.2,
       ease: "power4.easeOut",
     });
+    gsap.from(".me-intro-item", {
+      scrollTrigger: {
+        trigger: ".me-intro-container",
+        scroller: ".scrollContainer",
+        start: "20% center",
+      },
+      y: 30,
+      opacity: 0,
+      stagger: 0.05,
+      duration: 0.3,
+      ease: "power4.easeOut",
+    });
 
     gsap.from(".about-me-item", {
       scrollTrigger: {
