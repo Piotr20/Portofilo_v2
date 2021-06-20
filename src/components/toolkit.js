@@ -17,6 +17,7 @@ import { FaBootstrap } from "@react-icons/all-files/fa/FaBootstrap";
 import { GrGatsbyjs } from "@react-icons/all-files/gr/GrGatsbyjs";
 import { GrWordpress } from "@react-icons/all-files/gr/GrWordpress";
 import { SiNpm } from "@react-icons/all-files/si/SiNpm";
+import { SiGraphql } from "@react-icons/all-files/si/SiGraphql";
 import { FiFigma } from "@react-icons/all-files/fi/FiFigma";
 
 const MyToolkit = () => {
@@ -44,6 +45,10 @@ const MyToolkit = () => {
         <div className="self-center">
           <SiJavascript className="toolkit-item w-16 h-16 2xl:w-20 2xl:h-20" />
         </div>
+        <div className="self-center">
+          <SiGraphql className="toolkit-item w-16 h-16 2xl:w-20 2xl:h-20" />
+        </div>
+
         <div className="self-center">
           <SiSass className="toolkit-item w-16 h-16 2xl:w-20 2xl:h-20" />
         </div>

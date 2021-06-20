@@ -53,7 +53,7 @@ const AboutPage = () => {
       yPercent: 100,
       rotation: 15,
       opacity: 30,
-      duration: 0.15,
+      duration: 0.3,
       ease: "power4.easeOut",
     });
     gsap.from(".skills-item-1", {

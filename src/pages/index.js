@@ -97,6 +97,30 @@ const IndexPage = () => {
       duration: 0.2,
       ease: "power4.easeOut",
     });
+    gsap.to(".logo", {
+      scrollTrigger: {
+        trigger: ".showcase-container",
+        scroller: ".scrollContainer",
+        start: "40% center",
+        end: "90% top",
+        toggleActions: "play reverse play reverse",
+      },
+      backgroundColor: "white",
+      duration: 0.2,
+      ease: "power4.easeOut",
+    });
+    gsap.to(".logo-color", {
+      scrollTrigger: {
+        trigger: ".showcase-container",
+        scroller: ".scrollContainer",
+        start: "40% center",
+        end: "90% top",
+        toggleActions: "play reverse play reverse",
+      },
+      opacity: 0,
+      duration: 0.2,
+      ease: "power4.easeOut",
+    });
     gsap.from(".me-intro-item", {
       scrollTrigger: {
         trigger: ".me-intro-container",

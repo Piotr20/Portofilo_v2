@@ -12,7 +12,7 @@ const Header = () => {
     <header
       className={`flex w-full fixed z-50 pointer-events-none justify-between items-start lg:items-center`}
     >
-      <div className="w-17 pointer-events-auto h-24 md:w-20 md:h-26 xl:w-24 xl:h-30 bg-black flex items-center justify-center">
+      <div className="w-17 logo pointer-events-auto h-24 md:w-20 md:h-26 xl:w-24 xl:h-30 bg-black flex items-center justify-center">
         <AniLink
           paintDrip
           hex="#3D59E9"
@@ -79,7 +79,6 @@ const Header = () => {
           © 2011 Piotr Pospiech
         </h3>
       </div>
-      <div className="custom-cursor hidden md:block"></div>
     </header>
   );
 };

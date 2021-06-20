@@ -1,13 +1,9 @@
 module.exports = {
-  siteMetadata: {
-    title: "Portfolio",
-  },
   flags: { PRESERVE_WEBPACK_CACHE: true },
   plugins: [
     "gatsby-plugin-sass",
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
-    "gatsby-plugin-sitemap",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     "gatsby-plugin-postcss",
