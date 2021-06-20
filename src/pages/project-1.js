@@ -2,6 +2,7 @@ import LocomotiveScroll from "locomotive-scroll";
 import "../styles/locomotiveScroll.css";
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
+import SEO from "../components/Seo";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Header from "../components/layout-elements/header";
 gsap.registerPlugin(ScrollTrigger);
@@ -39,9 +40,16 @@ const Project1 = () => {
     ScrollTrigger.refresh();
   }, []);
   return (
-    <main ref={project1Ref} className="scrollContainer">
-      <Header />
-    </main>
+    <>
+      <SEO
+        title="Project 1"
+        description="Project number 1 page"
+        keywords={["design", "quality", "development"]}
+      />
+      <main ref={project1Ref} className="scrollContainer">
+        <Header />
+      </main>
+    </>
   );
 };
 

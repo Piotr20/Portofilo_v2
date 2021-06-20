@@ -23,13 +23,13 @@ const Logo = () => {
       <div className="absolute w-full logo-black top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2">
         <Img
           style={{ width: "100%" }}
-          fluid={data.allFile.nodes[1].childrenImageSharp[0].fluid}
+          fluid={data.allFile.nodes[0].childrenImageSharp[0].fluid}
         />
       </div>
       <div className="absolute w-full logo-color top-0 left-1/2 transform -translate-y-1/2 -translate-x-1/2">
         <Img
           style={{ width: "100%" }}
-          fluid={data.allFile.nodes[0].childrenImageSharp[0].fluid}
+          fluid={data.allFile.nodes[1].childrenImageSharp[0].fluid}
         />
       </div>
     </div>

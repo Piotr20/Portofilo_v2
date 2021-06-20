@@ -9,6 +9,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import AboutIntro from "../components/aboutIntroSection";
 import LongTextAbout from "../components/longTextAbout";
 import SkillsShowreel from "../components/skillShowreel";
+import SEO from "../components/Seo";
 import Cv from "../components/cv";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -112,18 +113,25 @@ const AboutPage = () => {
     ScrollTrigger.refresh();
   }, []);
   return (
-    <main ref={scrollRef} className="scrollContainer">
-      <Header />
-      <Container>
-        <AboutIntro />
-        <LongTextAbout />
-        <SkillsShowreel />{" "}
-      </Container>
-      <MyToolkit />
-      <Container>
-        <Cv />
-      </Container>
-    </main>
+    <>
+      <SEO
+        title="About"
+        description="page with more information about the author"
+        keywords={["design", "quality", "development"]}
+      />
+      <main ref={scrollRef} className="scrollContainer">
+        <Header />
+        <Container>
+          <AboutIntro />
+          <LongTextAbout />
+          <SkillsShowreel />{" "}
+        </Container>
+        <MyToolkit />
+        <Container>
+          <Cv />
+        </Container>
+      </main>
+    </>
   );
 };
 export default AboutPage;

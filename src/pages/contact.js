@@ -6,6 +6,7 @@ import Container from "../components/layout-elements/container";
 import LongTextContact from "../components/longTextContact";
 import "../styles/locomotiveScroll.css";
 import { gsap } from "gsap";
+import SEO from "../components/Seo";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
@@ -70,13 +71,20 @@ const ContactPage = () => {
     ScrollTrigger.refresh();
   }, []);
   return (
-    <main ref={scrollRef} className="scrollContainer">
-      <Header />
-      <Container>
-        <LongTextContact />
-      </Container>
-      <ContactInfo />
-    </main>
+    <>
+      <SEO
+        title="Contact"
+        description="page with contact information"
+        keywords={["design", "quality", "development"]}
+      />
+      <main ref={scrollRef} className="scrollContainer">
+        <Header />
+        <Container>
+          <LongTextContact />
+        </Container>
+        <ContactInfo />
+      </main>
+    </>
   );
 };
 export default ContactPage;

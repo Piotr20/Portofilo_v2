@@ -1,4 +1,11 @@
 module.exports = {
+  siteMetadata: {
+    title: "Portfolio",
+    description:
+      "Portfolio page of Piotr Pospiech developer and designer based in Aarhus Denmark",
+    url: "https://billig-animation.piotrpospiech.com/",
+    author: "Piotr Pospiech",
+  },
   flags: { PRESERVE_WEBPACK_CACHE: true },
   plugins: [
     "gatsby-plugin-sass",
@@ -8,6 +15,7 @@ module.exports = {
     "gatsby-transformer-sharp",
     "gatsby-plugin-postcss",
     `gatsby-plugin-transition-link`,
+    "gatsby-plugin-react-helmet",
     {
       resolve: "gatsby-source-filesystem",
       options: {

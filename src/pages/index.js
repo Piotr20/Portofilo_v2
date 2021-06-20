@@ -12,6 +12,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import PersonIntro from "../components/personIntro";
 import MoreInfo from "../components/moreAboutMe";
 import ContactInfo from "../components/contact-info";
+import SEO from "../components/Seo";
 gsap.registerPlugin(ScrollTrigger);
 
 const IndexPage = () => {
@@ -121,6 +122,7 @@ const IndexPage = () => {
       duration: 0.2,
       ease: "power4.easeOut",
     });
+
     gsap.from(".me-intro-item", {
       scrollTrigger: {
         trigger: ".me-intro-container",
@@ -176,23 +178,26 @@ const IndexPage = () => {
 
     // after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
     ScrollTrigger.refresh();
-    const scrollContainer = document.querySelector(".scrollContainer");
-    scrollContainer.addEventListener("mousemove", () => {
-      console.log(scrollContainer.getBoundingClientRect());
-    });
   }, []);
   return (
-    <main ref={scrollRef} className="scrollContainer">
-      <Header />
-      <Container>
-        <LongTextBlock />
-      </Container>
-      <HorizontalShowcase />
-      <HorizontalShowcaseMobile />
-      <PersonIntro />
-      <MoreInfo />
-      <ContactInfo />
-    </main>
+    <>
+      <SEO
+        title="Home"
+        description="frontpage for billig animation website, company making cheap and quality animations"
+        keywords={["design", "quality", "development"]}
+      />
+      <main ref={scrollRef} className="scrollContainer">
+        <Header />
+        <Container>
+          <LongTextBlock />
+        </Container>
+        <HorizontalShowcase />
+        <HorizontalShowcaseMobile />
+        <PersonIntro />
+        <MoreInfo />
+        <ContactInfo />
+      </main>
+    </>
   );
 };
 

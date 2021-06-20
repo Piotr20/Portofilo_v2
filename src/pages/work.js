@@ -7,6 +7,7 @@ import "../styles/locomotiveScroll.css";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import WorkIntro from "../components/workIntro";
+import SEO from "../components/Seo";
 import WorkProjects from "../components/workProjects";
 gsap.registerPlugin(ScrollTrigger);
 
@@ -119,14 +120,21 @@ const WorkPage = () => {
     ScrollTrigger.refresh();
   }, []);
   return (
-    <main ref={scrollRef} className="scrollContainer">
-      <Header />
-      <Container>
-        <WorkIntro />
-        <WorkProjects />
-      </Container>
-      <ContactInfo />
-    </main>
+    <>
+      <SEO
+        title="Work"
+        description="page with all the projects gallery"
+        keywords={["design", "quality", "development"]}
+      />
+      <main ref={scrollRef} className="scrollContainer">
+        <Header />
+        <Container>
+          <WorkIntro />
+          <WorkProjects />
+        </Container>
+        <ContactInfo />
+      </main>
+    </>
   );
 };
 export default WorkPage;

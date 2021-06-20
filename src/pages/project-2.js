@@ -3,6 +3,7 @@ import "../styles/locomotiveScroll.css";
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import SEO from "../components/Seo";
 import Header from "../components/layout-elements/header";
 import Project2Intro from "../components/project-2-elements/project2Intro";
 import HeroImageSmokepins from "../components/project-2-elements/heroImageSmokepins";
@@ -43,13 +44,20 @@ const Project2 = () => {
     ScrollTrigger.refresh();
   }, []);
   return (
-    <main ref={project1Ref} className="scrollContainer">
-      <Header />
-      <HeroImageSmokepins />
-      <Project2Intro />
-      <Project2Content />
-      <Project2Tools />
-    </main>
+    <>
+      <SEO
+        title="Project 2"
+        description="Project number 2 page"
+        keywords={["design", "quality", "development"]}
+      />
+      <main ref={project1Ref} className="scrollContainer">
+        <Header />
+        <HeroImageSmokepins />
+        <Project2Intro />
+        <Project2Content />
+        <Project2Tools />
+      </main>
+    </>
   );
 };
 

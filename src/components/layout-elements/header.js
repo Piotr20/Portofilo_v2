@@ -72,7 +72,9 @@ const Header = () => {
             </Link>
           </li>
           <li className="py-6">
-            <Link to="/contact py-6">Contact</Link>
+            <Link className="py-6" to="/contact">
+              Contact
+            </Link>
           </li>
         </ul>
         <h3 className="text-lg pb-6 text-center row-start-3 self-end text-white">
