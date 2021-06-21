@@ -28,7 +28,7 @@ const AboutIntro = () => {
     >
       <div className="flex flex-col md:flex-row  md:justify-between">
         <div className="w-full md:w-3/5 flex flex-col">
-          <h1 className="self-start text-4xl md:text-5xl xl:text-6xl xl:leading-snug font-bold -mt-18 xl:-mt-24 lg:mb-40 xl:mb-1/2">
+          <h1 className="self-start text-4xl md:text-5xl xl:text-6xl xl:leading-snug font-bold -mt-18 xl:-mt-24 lg:mb-28 xl:mb-1/2">
             About <br /> me
           </h1>
           <p className="px-2 my-8 md:mt-0 self-center lg:w-3/5 text-lg md:text-xl 2xl:text-2xl">

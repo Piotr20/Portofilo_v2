@@ -9,7 +9,7 @@ const LongTextAbout = () => {
   useEffect(() => {}, []);
   return (
     <section data-scroll-section className=" text-trigger">
-      <div className="font-semibold mb-32  lg:py-36 lg:mb-40 text-black text-4xl leading-loose lg:text-5xl lg:leading-loose 2xl:text-7xl 2xl:leading-relaxed flex justify-center ">
+      <div className="font-semibold mb-32  lg:py-12 text-black text-4xl leading-loose lg:text-5xl lg:leading-loose 2xl:text-7xl 2xl:leading-relaxed flex justify-center ">
         <h1 ref={sectionRef} className="hero-title hidden lg:block ">
           <div className="anim-hero-title overflow-hidden">
             <span className="anim-hero-title__content">I</span>
