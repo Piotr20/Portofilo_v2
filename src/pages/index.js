@@ -17,6 +17,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const IndexPage = () => {
   const scrollRef = useRef(null);
+
   useEffect(() => {
     const locoScroll = new LocomotiveScroll({
       el: scrollRef.current,
@@ -179,6 +180,7 @@ const IndexPage = () => {
     // after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
     ScrollTrigger.refresh();
   }, []);
+
   return (
     <>
       <SEO
