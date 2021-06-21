@@ -8,15 +8,14 @@ const LongTextBlock = () => {
   const sectionRef = useRef(null);
 
   useEffect(() => {
-    let heroTextAnim = gsap.timeline({
+    gsap.from(".anim-hero-title__content", {
       scrollTrigger: {
         trigger: sectionRef.current,
         markers: false,
+        scroller: ".scrollContainer",
         start: "-100%",
         end: "-30%",
       },
-    });
-    heroTextAnim.from(".anim-hero-title__content", {
       stagger: 0.03,
       yPercent: 100,
       rotation: 15,
