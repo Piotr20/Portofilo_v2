@@ -24,14 +24,17 @@ const NotFoundPage = () => {
   return (
     <main className="flex flex-col items-center">
       <Header />
-      <div className="w-full mx-auto md:w-1/2 xl:w-2/5 pt-40 md:pt-20 xl:pt-24">
+      <div className="w-full mx-auto md:w-2/5 xl:w-1/3 pt-40 md:pt-20 xl:pt-24">
         <Img
           style={{ height: "100%", width: "100%" }}
           imgStyle={{ objectPosition: "95% top" }}
           fluid={data.allFile.nodes[0].childrenImageSharp[0].fluid}
         />
       </div>
-      <Link className="text-3xl md:text-4xl xl:text-5xl  font-bold" to="/">
+      <Link
+        className="text-3xl underline-custom-hover transition-colors duration-300 hover:text-custo-blue md:text-4xl xl:text-5xl  font-bold"
+        to="/"
+      >
         Go home
       </Link>
     </main>
