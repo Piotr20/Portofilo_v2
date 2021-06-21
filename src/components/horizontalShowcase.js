@@ -342,7 +342,7 @@ const HorizontalShowcase = () => {
       data-scroll-section
       data-scroll-sticky
       data-scroll-target
-      className="w-full md:h-screen showcase-container bg-black flex-col  hidden md:flex"
+      className="w-full showcase-container bg-black flex-col hidden md:flex"
     >
       <h2
         ref={showcaseRef}
@@ -352,7 +352,7 @@ const HorizontalShowcase = () => {
       >
         My work
       </h2>
-      <div className="cursor-pointer font-semibold block w-full relative text-5xl lg:text-7xl xl:text-9xl lg:mt-12 xl:mt-0 ">
+      <div className="cursor-pointer font-semibold block w-full relative text-5xl lg:text-6xl xl:text-9xl lg:mt-12 xl:mt-0 ">
         <h2 className="work-title pointer-events-none z-10 text-white absolute bottom-1/5 left-1/5 transform -translate-x-1/4">
           <div className="anim-work-title overflow-hidden">
             <span className="work-heading-4">S</span>
