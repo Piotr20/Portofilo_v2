@@ -16,9 +16,9 @@ const ContactInfo = () => {
         <ul className="text-lg 2xl:text-xl">
           <a
             className="underline-custom-hover hover:text-custo-blue transition-colors duration-300 inline-block py-1"
-            href="mailto:piotrpospiech00@gamil.com"
+            href="mailto:piotrpospiech00@gmail.com"
           >
-            <li className="contact-item-1">piotrpospiech00@gamil.com</li>
+            <li className="contact-item-1">piotrpospiech00@gmail.com</li>
           </a>
         </ul>
         <h3 className="text-2xl contact-item-1 mt-4  md:mt-2 2xl:text-3xl">
