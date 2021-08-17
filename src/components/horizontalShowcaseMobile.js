@@ -27,6 +27,21 @@ const HorizontalShowcaseMobile = () => {
               <div className=" bg-red-600 h-2/3 w-2/3   ">
                 <AniLink paintDrip hex="#3D59E9" to="/project-4">
                   <div className=" bg-custo-blue">
+                    <HeroImage company="siguna" />
+                  </div>
+                </AniLink>
+                <h2 className="absolute bottom-0 text-white text-3xl w-2/3 text-center">
+                  Siguna
+                </h2>
+              </div>
+            </Slide>
+            <Slide
+              innerClassName="flex justify-center pt-12 relative"
+              index={0}
+            >
+              <div className=" bg-red-600 h-2/3 w-2/3   ">
+                <AniLink paintDrip hex="#3D59E9" to="/project-4">
+                  <div className=" bg-custo-blue">
                     <HeroImage company="billig-animation" />
                   </div>
                 </AniLink>
@@ -63,21 +78,6 @@ const HorizontalShowcaseMobile = () => {
                 </AniLink>
                 <h2 className="absolute bottom-0 text-white text-3xl w-2/3 text-center">
                   Arla
-                </h2>
-              </div>
-            </Slide>
-            <Slide
-              innerClassName="flex justify-center pt-12 relative"
-              index={0}
-            >
-              <div className=" bg-red-600 h-2/3 w-2/3   ">
-                <AniLink paintDrip hex="#3D59E9" to="/404">
-                  <div className=" bg-custo-blue">
-                    <HeroImage company="siguna" />
-                  </div>
-                </AniLink>
-                <h2 className="absolute bottom-0 text-white text-3xl w-2/3 text-center">
-                  Siguna
                 </h2>
               </div>
             </Slide>

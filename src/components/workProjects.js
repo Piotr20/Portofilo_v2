@@ -19,8 +19,8 @@ const WorkProjects = () => {
             Development, UX & UI design, Marketing strategy, Web animations
           </p>
         </div>
-        <div className="py-12 project-container-1 md:py-0 lg:row-start-4 lg:row-span-2">
-          <AniLink paintDrip hex="#3D59E9" to="/404">
+        <div className="py-12 project-container-1 md:py-0 lg:row-start-1 lg:row-span-2">
+          <AniLink paintDrip hex="#3D59E9" to="/project-1">
             <div className=" work-image-container project-item-1 relative z-1 ">
               <HeroImage company="siguna" />
             </div>
@@ -45,7 +45,7 @@ const WorkProjects = () => {
             Development, Web animations, Marketing strategy, UX & UI design
           </p>
         </div>
-        <div className="py-12 project-container-4 md:py-0 lg:row-start-1 lg:row-span-2">
+        <div className="py-12 project-container-4 md:py-0 lg:row-start-4 lg:row-span-2">
           <AniLink paintDrip hex="#3D59E9" to="/project-4">
             <div className="work-image-container project-item-4 relative z-1 ">
               <HeroImage company="billig-animation" />
