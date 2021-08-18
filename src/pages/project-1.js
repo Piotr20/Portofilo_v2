@@ -5,6 +5,10 @@ import { gsap } from "gsap";
 import SEO from "../components/Seo";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Header from "../components/layout-elements/header";
+import HeroImageSiguna from "../components/project-1-elements/heroImageSiguna";
+import Project1Intro from "../components/project-1-elements/project1Intro";
+import Project1Content from "../components/project-1-elements/project1Content";
+import Project1Tools from "../components/project-1-elements/project1Tools";
 gsap.registerPlugin(ScrollTrigger);
 
 const Project1 = () => {
@@ -48,6 +52,10 @@ const Project1 = () => {
       />
       <main ref={project1Ref} className="scrollContainer">
         <Header />
+        <HeroImageSiguna />
+        <Project1Intro />
+        <Project1Content />
+        <Project1Tools />
       </main>
     </>
   );
