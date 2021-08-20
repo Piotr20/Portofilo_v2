@@ -31,10 +31,9 @@ const PersonIntro = () => {
           Hi I’m Piotr <br />
           Frontend <span className="text-white outlined-text">developer</span>,
           <br />
-          Animation & <br /> Interaction <br />
-          <span className="text-white me-intro-item outlined-text">
-            designer
-          </span>
+          that knows <br />a little about
+          <br />
+          <span className="text-white me-intro-item outlined-text">design</span>
         </h2>
       </div>
 
