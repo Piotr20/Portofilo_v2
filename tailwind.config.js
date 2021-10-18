@@ -311,6 +311,7 @@ module.exports = {
       "6xl": ["4rem", { lineHeight: "1.3" }],
       "7xl": ["4.5rem", { lineHeight: "1.3" }],
       "8xl": ["6rem", { lineHeight: "1" }],
+      "8.5xl": ["7rem", { lineHeight: "1.25" }],
       "9xl": ["8rem", { lineHeight: "1.3" }],
       "10xl": ["10rem", { lineHeight: "1.3" }],
       "11xl": ["12rem", { lineHeight: "1.35" }],
