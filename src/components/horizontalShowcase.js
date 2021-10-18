@@ -352,7 +352,7 @@ const HorizontalShowcase = () => {
       >
         My work
       </h2>
-      <div className="cursor-pointer font-semibold block w-full relative text-5xl lg:text-6xl xl:text-9xl lg:mt-12 xl:mt-0 ">
+      <div className="cursor-pointer font-semibold block w-full relative text-5xl xl:text-7xl 2xl:text-8xl 2xl:leading-tight lg:mt-12 xl:mt-0 ">
         <h2 className="work-title pointer-events-none z-10 text-white absolute bottom-1/5 left-1/5 transform -translate-x-1/4">
           <div className="anim-work-title overflow-hidden">
             <span className="work-heading-1">S</span>
