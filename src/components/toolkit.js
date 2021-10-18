@@ -40,9 +40,6 @@ const MyToolkit = () => {
           <GrGatsbyjs className=" toolkit-item w-16 h-16 2xl:w-20 2xl:h-20" />
         </div>
         <div className="self-center">
-          <SiTypescript className="toolkit-item w-16 h-16 2xl:w-20 2xl:h-20" />
-        </div>
-        <div className="self-center">
           <SiJavascript className="toolkit-item w-16 h-16 2xl:w-20 2xl:h-20" />
         </div>
         <div className="self-center">
