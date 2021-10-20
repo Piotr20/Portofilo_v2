@@ -57,6 +57,14 @@ const ContactInfo = () => {
               Linkedin
             </a>
           </li>
+          <li className="contact-item-2">
+            <a
+              className="pb-1 underline-custom-hover-blue transition-colors duration-300 hover:text-custo-blue"
+              href="https://github.com/Piotr20"
+            >
+              Github
+            </a>
+          </li>
 
           <li className="contact-item-2 pt-1">
             <a
