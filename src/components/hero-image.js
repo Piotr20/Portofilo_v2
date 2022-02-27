@@ -28,7 +28,7 @@ const HeroImage = ({ company }) => {
         <Img
           style={{ height: "100%", width: "100%" }}
           imgStyle={{ objectPosition: "95% top" }}
-          fluid={data.allFile.nodes[2].childrenImageSharp[0].fluid}
+          fluid={data.allFile.nodes[3].childrenImageSharp[0].fluid}
         />
       );
     case "billig-animation":
@@ -44,7 +44,7 @@ const HeroImage = ({ company }) => {
         <Img
           style={{ height: "100%", width: "100%" }}
           imgStyle={{ objectPosition: "95% top" }}
-          fluid={data.allFile.nodes[1].childrenImageSharp[0].fluid}
+          fluid={data.allFile.nodes[2].childrenImageSharp[0].fluid}
         />
       );
     case "smokepins":
@@ -52,7 +52,7 @@ const HeroImage = ({ company }) => {
         <Img
           style={{ height: "100%", width: "100%" }}
           imgStyle={{ objectPosition: "right center" }}
-          fluid={data.allFile.nodes[3].childrenImageSharp[0].fluid}
+          fluid={data.allFile.nodes[1].childrenImageSharp[0].fluid}
         />
       );
   }
