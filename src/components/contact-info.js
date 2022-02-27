@@ -7,12 +7,8 @@ const ContactInfo = () => {
       className="pb-16 md:py-16 container  w-full px-6 xl:px-20 lg:max-w-3xl xl:max-w-5xl flex flex-col md:flex-row md:justify-between"
     >
       <div className="contact-container-1">
-        <h2 className="text-4xl contact-item-1 2xl:text-5xl m font-semibold">
-          Get in touch
-        </h2>
-        <h3 className="text-2xl contact-item-1  2xl:text-3xl mt-4  md:mt-2">
-          Email address:
-        </h3>
+        <h2 className="text-4xl contact-item-1 2xl:text-5xl m font-semibold">Get in touch</h2>
+        <h3 className="text-2xl contact-item-1  2xl:text-3xl mt-4  md:mt-2">Email address:</h3>
         <ul className="text-lg 2xl:text-xl">
           <a
             className="underline-custom-hover hover:text-custo-blue transition-colors duration-300 inline-block py-1"
@@ -21,33 +17,23 @@ const ContactInfo = () => {
             <li className="contact-item-1">piotrpospiech00@gmail.com</li>
           </a>
         </ul>
-        <h3 className="text-2xl contact-item-1 mt-4  md:mt-2 2xl:text-3xl">
-          Phone number:
-        </h3>
+        <h3 className="text-2xl contact-item-1 mt-4  md:mt-2 2xl:text-3xl">Phone number:</h3>
         <ul className="text-lg 2xl:text-xl">
           <li className="contact-item-1">
-            <a
-              className="underline-custom-hover hover:text-custo-blue transition-colors duration-300 inline-block py-1"
-              href="tel:+45 91 95 31 33"
-            >
+            <a className="underline-custom-hover hover:text-custo-blue transition-colors duration-300 inline-block py-1" href="tel:+45 91 95 31 33">
               +45 91 95 31 33
             </a>
           </li>
 
           <li className="contact-item-1">
-            <a
-              className="underline-custom-hover inline-block hover:text-custo-blue transition-colors duration-300 pb-1"
-              href="tel:+48 782 206 065"
-            >
+            <a className="underline-custom-hover inline-block hover:text-custo-blue transition-colors duration-300 pb-1" href="tel:+48 782 206 065">
               +48 782 206 065
             </a>
           </li>
         </ul>
       </div>
       <div className="mt-6 md:mt-0 contact-container-2">
-        <h2 className="text-4xl 2xl:text-5xl contact-item-2 md: font-semibold">
-          Follow me
-        </h2>
+        <h2 className="text-4xl 2xl:text-5xl contact-item-2 md: font-semibold">Follow me</h2>
         <ul className="text-xl mt-4 md:mt-2 md:text-2xl ">
           <li className="contact-item-2">
             <a
@@ -58,10 +44,7 @@ const ContactInfo = () => {
             </a>
           </li>
           <li className="contact-item-2">
-            <a
-              className="pb-1 underline-custom-hover-blue transition-colors duration-300 hover:text-custo-blue"
-              href="https://github.com/Piotr20"
-            >
+            <a className="pb-1 underline-custom-hover-blue transition-colors duration-300 hover:text-custo-blue" href="https://github.com/Piotr20">
               Github
             </a>
           </li>
