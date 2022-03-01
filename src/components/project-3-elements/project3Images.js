@@ -18,7 +18,6 @@ const Project3Image = ({ type }) => {
       }
     }
   `);
-  console.log(data);
 
   return (
     <div>
@@ -26,11 +25,7 @@ const Project3Image = ({ type }) => {
         return (
           <div key={i}>
             {image.name === `arla-${type}` ? (
-              <Img
-                style={{ height: "100%", width: "100%" }}
-                imgStyle={{ objectPosition: "95% top" }}
-                fluid={image.childrenImageSharp[0].fluid}
-              />
+              <Img style={{ height: "100%", width: "100%" }} imgStyle={{ objectPosition: "95% top" }} fluid={image.childrenImageSharp[0].fluid} />
             ) : (
               ""
             )}
