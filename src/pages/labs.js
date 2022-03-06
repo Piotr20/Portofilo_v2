@@ -36,79 +36,6 @@ const LabsPage = () => {
       pinType: document.querySelector(".scrollContainer").style.transform ? "transform" : "fixed",
     });
 
-    gsap.from(".contact-item-1", {
-      scrollTrigger: {
-        trigger: ".contact-container-1",
-        scroller: ".scrollContainer",
-        start: "top 80%",
-      },
-      y: 30,
-      opacity: 0,
-      stagger: 0.05,
-      duration: 0.2,
-      ease: "power4.easeOut",
-    });
-    gsap.from(".contact-item-2", {
-      scrollTrigger: {
-        trigger: ".contact-container-2",
-        scroller: ".scrollContainer",
-        start: "top 80%",
-      },
-      y: 30,
-      opacity: 0,
-      stagger: 0.05,
-      duration: 0.2,
-      ease: "power4.easeOut",
-    });
-    gsap.from(".project-item-1", {
-      scrollTrigger: {
-        trigger: ".project-container-1",
-        scroller: ".scrollContainer",
-        start: "top 65%",
-      },
-      y: 30,
-      opacity: 0,
-      stagger: 0.05,
-      duration: 0.2,
-      ease: "power4.easeOut",
-    });
-    gsap.from(".project-item-2", {
-      scrollTrigger: {
-        trigger: ".project-container-2",
-        scroller: ".scrollContainer",
-        start: "top 65%",
-      },
-      y: 30,
-      opacity: 0,
-      stagger: 0.05,
-      duration: 0.2,
-      ease: "power4.easeOut",
-    });
-    gsap.from(".project-item-3", {
-      scrollTrigger: {
-        trigger: ".project-container-3",
-        scroller: ".scrollContainer",
-        start: "top 65%",
-      },
-      y: 30,
-      opacity: 0,
-      stagger: 0.05,
-      duration: 0.2,
-      ease: "power4.easeOut",
-    });
-    gsap.from(".project-item-4", {
-      scrollTrigger: {
-        trigger: ".project-container-4",
-        scroller: ".scrollContainer",
-        start: "top 65%",
-      },
-      y: 30,
-      opacity: 0,
-      stagger: 0.05,
-      duration: 0.2,
-      ease: "power4.easeOut",
-    });
-
     // each time the window updates, we should refresh ScrollTrigger and then update LocomotiveScroll.
     ScrollTrigger.addEventListener("load", () => locoScroll.update());
 
@@ -121,8 +48,14 @@ const LabsPage = () => {
       <main ref={scrollRef} className="scrollContainer">
         <Header />
         <Container>
-          <WorkIntro />
-          <WorkProjects />
+          <section data-scroll-section className=" pt-36 md:pt-48">
+            <h3 className="font-semibold text-3xl 2xl:text-4xl">
+              Welcome to labs a dark place where you can see my passion projects.
+              <br /> The projects you can find here are too small to be called full blown projects,
+              <br /> they are usually small demos of me playing with certain technology.
+            </h3>
+            <div className=" w-full h-screen"></div>
+          </section>
         </Container>
         <ContactInfo />
       </main>

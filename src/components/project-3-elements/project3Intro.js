@@ -8,25 +8,19 @@ const Project3Intro = () => {
     <section data-scroll-section>
       <Container>
         <h2 className=" w-full pt-4  2xl:pt-12 text-3xl lg:text-4xl 2xl:text-5xl font-semibold">
-          Arla is a Danish multinational cooperative based in Viby, Denmark, and
-          the largest producer of dairy products in Scandinavia. They strong
-          focus goes towards making farming sustainable, they plan to achieve 0
-          carbon emission by 2050.
+          Over 1/3 of all the food we are buying ends up as waste. That fact is a literal waste of human effort and money, but there is many ways to
+          deak wutg ut both traditional and digital and Left Over app focuses on the second one.
         </h2>
         <p className=" pt-4 2xl:pt-8 text-lg lg:text-xl 2xl:text-2xl pb-8 2xl:pb-16">
-          When we took over the taks our goal was to come up with a solution
-          that will encourage farmers to join Arla in their goal of reducing
-          carbon emission. The most emphasis was put on making the solution as
-          user friendly as it is possible.
+          Left over was a semseter project that was a full stack soluton to help preventing or at least limiting food waste. We combined our design,
+          backend and frontend knowledge into one usable SPA web app.
         </p>
         <div className="w-full flex flex-col md:flex-row md:justify-between">
           <div className="md:w-1/4 xl:w-1/5 py-2 lg:py-4">
             <h3 className="font-semibold text-3xl 2xl:text-4xl">Client:</h3>
             <ul className="pt-2 lg:pt-4">
               <li>
-                <p className="text-lg md:text-2xl">
-                  Arla Farmers / <br /> Arla Garden +
-                </p>
+                <p className="text-lg md:text-2xl">Left Over</p>
               </li>
             </ul>
           </div>
@@ -37,13 +31,13 @@ const Project3Intro = () => {
                 <p className="text-lg md:text-2xl">UX & UI design</p>
               </li>
               <li>
-                <p className="text-lg md:text-2xl">Marketing strategy</p>
+                <p className="text-lg md:text-2xl">Research</p>
               </li>
               <li>
-                <p className="text-lg md:text-2xl">Web animation</p>
+                <p className="text-lg md:text-2xl">Frontend development</p>
               </li>
               <li>
-                <p className="text-lg md:text-2xl">Development</p>
+                <p className="text-lg md:text-2xl">Backend development</p>
               </li>
             </ul>
           </div>
@@ -52,26 +46,18 @@ const Project3Intro = () => {
             <ul className="pt-2 lg:pt-4">
               <li>
                 <p className="text-lg md:text-2xl">
-                  Come up with a solution that can fill all the needs of Danish
-                  farmers and make taking care of our planet as pleasant
-                  expierience as possible.
+                  The purpose was to combine our knowledge about backend, frontend and design and create a digital solution that can be actually
+                  usable.
                 </p>
               </li>
             </ul>
           </div>
         </div>
         <div className="py-2 lg:py-4 group">
-          <a
-            className="inline-block group-hover:text-custo-blue transition-colors duration-300"
-            href="https://xd.adobe.com/view/864f31be-5aba-4872-99cb-14c97e09827a-d31c/"
-          >
-            <h3 className="font-semibold text-3xl 2xl:text-4xl group-hover:text-custo-blue transition-colors duration-300">
-              View prototype
-            </h3>
+          <a className="inline-block group-hover:text-custo-blue transition-colors duration-300" href="http://left-over.piotrpospiech.com/#/login">
+            <h3 className="font-semibold text-3xl 2xl:text-4xl group-hover:text-custo-blue transition-colors duration-300">View site</h3>
 
-            <p className="md:hidden pt-2 text-lg underline-custom">
-              Click here
-            </p>
+            <p className="md:hidden pt-2 text-lg underline-custom">Click here</p>
             <BsArrowRight className="hidden md:block w-12 h-12 transform scale-x-150" />
           </a>
         </div>

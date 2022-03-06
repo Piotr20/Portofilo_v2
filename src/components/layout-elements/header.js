@@ -34,7 +34,7 @@ const Header = () => {
       </button>
       <div
         id="burger-curtain"
-        className={`fixed top-0 w-full h-full transition-all duration-500 pointer-events-auto grid grid-rows-3 ${
+        className={`fixed top-0 w-full h-screen transition-all duration-500 pointer-events-auto grid grid-rows-3 ${
           showNav ? `left-0` : `left-full`
         } bg-black`}
       >
@@ -47,6 +47,11 @@ const Header = () => {
           <li className="py-6">
             <Link className="underline-custom-white py-6" to="/work">
               Work
+            </Link>
+          </li>
+          <li className="py-6">
+            <Link className="underline-custom-white py-6" to="/labs">
+              Labs
             </Link>
           </li>
           <li className="py-6">

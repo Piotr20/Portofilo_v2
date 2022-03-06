@@ -2,10 +2,11 @@ import React from "react";
 import Container from "../layout-elements/container";
 import Project3Image from "./project3Images";
 import { graphql, useStaticQuery } from "gatsby";
+import IphoneFrame from "../IphoneFrame";
 
 const Project3Content = () => {
   const data = useStaticQuery(graphql`
-    query ArlaVideoQuery {
+    query LeftOverVideoQuery {
       allFile(filter: { relativeDirectory: { eq: "videos" } }) {
         edges {
           node {
@@ -21,102 +22,94 @@ const Project3Content = () => {
   return (
     <section data-scroll-section>
       <Container>
-        <div className="w-full flex h-auto">
-          <video
-            className="w-full lg:h-screen-80"
-            autoPlay
-            muted
-            loop
-            src={data.allFile.edges[0].node.publicURL}
-          />
+        <div className="w-full flex flex-col md:flex-row justify-between md:items-center">
+          <div className=" md:w-2/5 md:h-screen-80">
+            <video
+              className="block px-3 md:px-4 py-2 rounded-5xl h-full md:rounded-8xl"
+              autoPlay
+              muted
+              loop
+              src={data.allFile.edges[3].node.publicURL}
+            />
+          </div>
+          <div className="md:w-3/5 mt-4 md:mt-0">
+            <h3 className="font-semibold text-3xl 2xl:text-4xl">Live demo</h3>
+            <p className="2xl:pt-2 text-lg lg:text-xl 2xl:text-2xl pb-4 2xl:pb-8 md:w-4/5 ">
+              The video shows live demo of the website, you are also welcome to click link above to experince the website yourself.
+            </p>
+            <h3 className="font-semibold text-xl 2xl:text-2xl">Presented features:</h3>
+            <ul className=" list-disc list-inside">
+              <li>Feed, filtering and search</li>
+              <li>Blog and knowledge section</li>
+              <li>Create post</li>
+              <li>Buy product</li>
+              <li>Shopping list </li>
+              <li>Profile </li>
+            </ul>
+          </div>
         </div>
-        <div className="flex flex-col md:flex-row md:grid md:grid-cols-3 md:gap-12 xl:gap-20 py-6 ">
-          <div className="py-6">
-            <Project3Image type="dashboard-mobile-1" />
+        <div className="flex w-full flex-col md:flex-row md:grid md:grid-cols-3 md:gap-12 xl:gap-20 py-6 ">
+          <div className="py-6 ">
+            <Project3Image type="splashscreen" />
           </div>
           <div className="py-6">
-            <Project3Image type="dashboard-mobile-2" />
+            <Project3Image type="login" />
           </div>
           <div className="py-6">
-            <Project3Image type="dashboard-mobile-3" />
+            <Project3Image type="onboarding" />
           </div>
         </div>
         <div className="w-full">
           <div className=" py-6 md:flex md:justify-center">
             <div>
-              <h3 className="font-semibold text-3xl 2xl:text-4xl">
-                Available everywhere from every device:
-              </h3>
+              <h3 className="font-semibold text-3xl 2xl:text-4xl">Unique design</h3>
               <p className="pt-4 2xl:pt-8 text-lg lg:text-xl 2xl:text-2xl pb-8 2xl:pb-16">
-                During the creative process we tried to make our solution as
-                good as it is possible, taking the final user into focus all the
-                time. We thought it would be a great idea to make the process of
-                putting data availiable for farmers when they are on them.
-                tractors, on the field or wherever they wish.
-                <br /> That is why we created designs for the mobile as well as
-                for the bigger screens.
+                In terms of design and iconography we decided to lean more towards softer shades of colors putting more emphasis on the enviromental
+                aspect of our solution therefore unifying the message we want to convey.
               </p>
             </div>
           </div>
         </div>
-        <div className="py-6">
-          <Project3Image type="dashboard" />
-        </div>
-        <div className=" py-6 md:flex md:justify-center">
-          <div>
-            <h3 className="font-semibold text-3xl 2xl:text-4xl">Dashboard:</h3>
+        <div className="py-6 flex flex-col md:flex-row md:items-center gap-6 w-full">
+          <div className="flex flex-col md:flex-row gap-6 w-full items-center md:w-2/3">
+            <Project3Image type="login" />
+            <Project3Image type="signup" />
+          </div>
+          <div className=" w-full md:w-1/3">
+            <h3 className="font-semibold text-3xl 2xl:text-4xl">Login & Sign up functionality</h3>
             <p className="pt-4 2xl:pt-8 text-lg lg:text-xl 2xl:text-2xl pb-8 2xl:pb-16">
-              Easiest way to present complex data is by the dashboard, where
-              users can easily see the data that interests them and rearange the
-              dashboard how they feel like, moving the segments around. It
-              gives. the user all the freedom she/he needs adjusting the whole
-              solution. to their preferences. Moreover, it is very important to
-              make sure, that the data is shown clearly and does not introduce
-              any uncertainty.
+              Account functionality is one of the basic functionalites of almost any app. With JavaScript, PHP and a bit of mySQL we also equiped our
+              app with it.
             </p>
           </div>
         </div>
-        <div className="md:flex md:justify-between w-full">
-          <div className=" py-6 md:w-3/7">
-            <div>
-              <h3 className="font-semibold text-3xl 2xl:text-4xl">
-                Clear onboarding:
-              </h3>
-              <p className="pt-4 2xl:pt-8 text-lg lg:text-xl 2xl:text-2xl pb-8 2xl:pb-16">
-                We understood that not everybody is tech savvy to understand
-                all. of the data at once, that is why it is essential to onboard
-                the users. We tried to introduce only the fundamental aspects of
-                us. solution to them. We did not want to stretch this step too
-                long, so the hypothetical user could enjoy the solution as fast
-                as possible without any unnecessary obstacles.
-              </p>
-            </div>
-          </div>
-          <div className="py-6 md:w-5/7">
-            <Project3Image type="onboarding" />
-          </div>
-        </div>
-        <div className=" w-full flex flex-col md:flex-row md:justify-between flex-wrap">
-          <div className="py-6 md:w-1/2 md:pr-6 xl:pr-10">
-            <Project3Image type="survey-1" />
-          </div>
-          <div className="py-6 md:w-1/2 md:pl-6 xl:pl-10">
-            <Project3Image type="survey-2" />
+
+        <div className=" py-6 flex flex-col md:justify-center w-full gap-6">
+          <div className="flex flex-col md:flex-row w-full gap-6">
+            <Project3Image type="feed" />
+            <Project3Image type="product" />
+            <Project3Image type="mobilePay" />
           </div>
           <div>
-            <h3 className="font-semibold text-3xl 2xl:text-4xl">
-              Smart survey:
-            </h3>
+            <h3 className="font-semibold text-3xl 2xl:text-4xl">Transaction system</h3>
             <p className="pt-4 2xl:pt-8 text-lg lg:text-xl 2xl:text-2xl pb-8 2xl:pb-16">
-              It is a human thing to get use to something and, therefore do some
-              stuff repeatly, but when it comes to boring stuff we want it to be
-              done ASAP. Farmers are obligated to do the survey every quarter
-              which means lots of data to put every 3 months.
-              <br /> The solution that we came up with is to incorporate
-              pre-filled input fields with the data that does not change so
-              often so if nothing. changed in that category you can just aprove
-              it and go to the next questions.
+              We have managed to implement payment and transaction feature in our app with only exception being absence of the payment provider. User
+              can easily find product, check it, book a time and quantity, and make a purchase that if authorised by payment provider will add the
+              product tp the transactions Json that we are then storing in our database.
             </p>
+          </div>
+        </div>
+        <div className=" py-6 flex flex-col-reverse md:flex-row md:items-center w-full gap-6">
+          <div className=" w-full md:w-1/2">
+            <h3 className="font-semibold text-3xl 2xl:text-4xl">Dev stack & explaination</h3>
+            <p className="pt-4 2xl:pt-8 text-lg lg:text-xl 2xl:text-2xl pb-8 2xl:pb-16 md:w-4/5">
+              The purpose of the project was to combine our konwledge and implement full stack solution with backend using mySQL and PHP and SPA
+              functionality in JS. We wanted to do more and try something mew and maybe learn some new technology. We decided to extend our basic dev
+              stack with Sass, Tailwind and Gulp since it would prepare us for component based UI frameworks like React.
+            </p>
+          </div>
+          <div className="flex flex-col md:flex-row w-full md:w-1/2 gap-6">
+            <Project3Image type="devstack" />
           </div>
         </div>
       </Container>

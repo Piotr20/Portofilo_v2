@@ -4,7 +4,7 @@ import React, { useEffect, useRef } from "react";
 import SEO from "../components/Seo";
 import Header from "../components/layout-elements/header";
 import Project3Intro from "../components/project-3-elements/project3Intro";
-import HeroImageArla from "../components/project-3-elements/heroImageArla";
+import HeroImageLeftOver from "../components/project-3-elements/heroImageLeftOver";
 import Project3Content from "../components/project-3-elements/project3Content";
 import Project3Tools from "../components/project-3-elements/project3Tools";
 import { gsap } from "gsap";
@@ -21,9 +21,7 @@ const Project3 = () => {
     // tell ScrollTrigger to use these proxy methods for the ".smooth-scroll" element since Locomotive Scroll is hijacking things
     ScrollTrigger.scrollerProxy(".scrollContainer", {
       scrollTop(value) {
-        return arguments.length
-          ? locoScroll.scrollTo(value, 0, 0)
-          : locoScroll.scroll.instance.scroll.y;
+        return arguments.length ? locoScroll.scrollTo(value, 0, 0) : locoScroll.scroll.instance.scroll.y;
       }, // we don't have to define a scrollLeft because we're only scrolling vertically.
       getBoundingClientRect() {
         return {
@@ -34,9 +32,7 @@ const Project3 = () => {
         };
       },
       // LocomotiveScroll handles things completely differently on mobile devices - it doesn't even transform the container at all! So to get the correct behavior and avoid jitters, we should pin things with position: fixed on mobile. We sense it by checking to see if there's a transform applied to the container (the LocomotiveScroll-controlled element).
-      pinType: document.querySelector(".scrollContainer").style.transform
-        ? "transform"
-        : "fixed",
+      pinType: document.querySelector(".scrollContainer").style.transform ? "transform" : "fixed",
     }); // each time the window updates, we should refresh ScrollTrigger and then update LocomotiveScroll.
     ScrollTrigger.addEventListener("load", () => locoScroll.update());
 
@@ -45,14 +41,10 @@ const Project3 = () => {
   }, []);
   return (
     <>
-      <SEO
-        title="Project 3"
-        description="Project number 3 page"
-        keywords={["design", "quality", "development"]}
-      />
+      <SEO title="Project 3" description="Project number 3 page" keywords={["design", "quality", "development"]} />
       <main ref={project1Ref} className="scrollContainer">
         <Header />
-        <HeroImageArla />
+        <HeroImageLeftOver />
         <Project3Intro />
         <Project3Content />
         <Project3Tools />
