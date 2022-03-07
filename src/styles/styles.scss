@@ -56,11 +56,13 @@
 .quoter-over-left {
   left: 125%;
 }
-.work-image-container {
+.work-image-container,
+.labs-image-container {
   transition: all 0.5s cubic-bezier(0.28, 1, 0.73, 0.91);
   filter: grayscale(100%);
 }
-.work-image-container:hover {
+.work-image-container:hover,
+.labs-image-container:hover {
   filter: grayscale(0);
 }
 .outlined-text {

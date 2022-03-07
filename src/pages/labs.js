@@ -6,9 +6,11 @@ import Container from "../components/layout-elements/container";
 import "../styles/locomotiveScroll.css";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import WorkIntro from "../components/workIntro";
+import AniLink from "gatsby-plugin-transition-link/AniLink";
+import Link from "gatsby-link";
 import SEO from "../components/Seo";
-import WorkProjects from "../components/workProjects";
+
+import LabsProjects from "../components/labsProjects";
 gsap.registerPlugin(ScrollTrigger);
 
 const LabsPage = () => {
@@ -44,17 +46,37 @@ const LabsPage = () => {
   }, []);
   return (
     <>
-      <SEO title="Labs" description="page with all the casual projects gallery" keywords={["design", "quality", "development"]} />
+      <SEO
+        title="Labs"
+        description="page with all the casual projects gallery"
+        keywords={["design", "quality", "development"]}
+      />
       <main ref={scrollRef} className="scrollContainer">
         <Header />
         <Container>
-          <section data-scroll-section className=" pt-36 md:pt-48">
-            <h3 className="font-semibold text-3xl 2xl:text-4xl">
-              Welcome to labs a dark place where you can see my passion projects.
-              <br /> The projects you can find here are too small to be called full blown projects,
-              <br /> they are usually small demos of me playing with certain technology.
+          <section data-scroll-section className=" pt-32 lg:pt-44">
+            <h3 className="font-semibold text-3xl 2xl:text-4xl md:w-4/5">
+              Welcome to labs a dark place where you can see my passion projects. The stuff you can find here
+              is too small to be called full blown projects, they are usually small demos of me playing with
+              certain technology.
             </h3>
-            <div className=" w-full h-screen"></div>
+          </section>
+          <LabsProjects />
+          <section
+            data-scroll-section
+            className="container w-full px-6 xl:px-20 lg:max-w-3xl xl:max-w-5xl pb-6 md:pb-4 md:-mb-8"
+          >
+            <h3 className="font-semibold text-2xl 2xl:text-3xl text-center">
+              If you want to see some full blown projects projects <br />
+              <AniLink
+                paintDrip
+                hex="#3D59E9"
+                className=" underline-custom-hover-blue transition-colors duration-300 hover:text-custo-blue"
+                to="/work"
+              >
+                Go to work
+              </AniLink>
+            </h3>
           </section>
         </Container>
         <ContactInfo />
