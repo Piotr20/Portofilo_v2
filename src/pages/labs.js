@@ -55,7 +55,7 @@ const LabsPage = () => {
         <Header />
         <Container>
           <section data-scroll-section className=" pt-32 lg:pt-44">
-            <h3 className="font-semibold text-3xl 2xl:text-4xl 2xl:w-4/5">
+            <h3 className="font-semibold text-3xl 2xl:text-4xl">
               Welcome to labs a dark place where you can see my passion projects. The stuff you can find here
               is too small to be called full blown projects, they are usually small demos of me playing with
               certain technology.
