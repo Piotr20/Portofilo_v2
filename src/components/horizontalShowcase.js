@@ -692,8 +692,18 @@ const HorizontalShowcase = () => {
     }
   }, []);
   return (
-    <section data-scroll-section data-scroll-sticky data-scroll-target className="w-full showcase-container bg-black flex-col hidden md:flex">
-      <h2 ref={showcaseRef} data-scroll data-scroll-call className="text-4xl xl:text-6xl font-semibold pl-36 lg:py-12 lg:pb-0 xl:pb-12 text-white">
+    <section
+      data-scroll-section
+      data-scroll-sticky
+      data-scroll-target
+      className="w-full showcase-container bg-black flex-col hidden md:flex"
+    >
+      <h2
+        ref={showcaseRef}
+        data-scroll
+        data-scroll-call
+        className="text-4xl xl:text-6xl font-semibold pl-36 lg:py-12 lg:pb-0 xl:pb-12 text-white"
+      >
         My work
       </h2>
       <div className="cursor-pointer font-semibold block w-full relative text-5xl xl:text-7xl 2xl:text-8.5xl 2xl:leading-tight lg:mt-12 xl:mt-0 ">
@@ -773,7 +783,12 @@ const HorizontalShowcase = () => {
         </h2>
         <CarouselProvider naturalSlideWidth={100} naturalSlideHeight={70} totalSlides={6} visibleSlides={1}>
           <Slider style={{ paddingRight: "22.5%", paddingLeft: "22.5%" }}>
-            <Slide index={0} classNameVisible="hey1" innerClassName="flex items-center justify-center" className={``}>
+            <Slide
+              index={0}
+              classNameVisible="hey1"
+              innerClassName="flex items-center justify-center"
+              className={``}
+            >
               <div className=" h-2/3 w-1/3 relative  ">
                 <AniLink paintDrip hex="#3D59E9" to="/project-1">
                   <div className="  work-image-container w-full h-full image-reveal">
@@ -798,7 +813,12 @@ const HorizontalShowcase = () => {
                 </div>
               </div>
             </Slide>
-            <Slide index={1} classNameVisible="hey5" innerClassName="flex items-center justify-center" className={``}>
+            <Slide
+              index={1}
+              classNameVisible="hey5"
+              innerClassName="flex items-center justify-center"
+              className={``}
+            >
               <div className="  h-2/3 w-1/3 relative  ">
                 <AniLink paintDrip hex="#3D59E9" to="/project-5">
                   <div className=" work-image-container  h-full relative z-1 image-reveal">
@@ -810,8 +830,8 @@ const HorizontalShowcase = () => {
                   <ul className=" pl-12 text-white md:text-lg xl:text-2xl 2xl:text-3xl font-normal">
                     <li className="py-1 work-project-info-5">UX & UI design</li>
                     <li className="py-1 work-project-info-5"> Design supervision</li>
-                    <li className="py-1 work-project-info-5">Backend development</li>
-                    <li className="py-1 work-project-info-5">Frontend development</li>
+                    <li className="py-1 work-project-info-5">Backend </li>
+                    <li className="py-1 work-project-info-5">Frontend </li>
                   </ul>
                   <div className="pl-12 flex pt-2 xl:pt-8 text-white text-3xl xl:text-4xl work-project-info-5">
                     <ButtonBack className="pr-4 xl:pr-6">
@@ -824,7 +844,12 @@ const HorizontalShowcase = () => {
                 </div>
               </div>
             </Slide>
-            <Slide classNameVisible="hey2" index={2} innerClassName="flex items-center justify-center" className={``}>
+            <Slide
+              classNameVisible="hey2"
+              index={2}
+              innerClassName="flex items-center justify-center"
+              className={``}
+            >
               <div className=" h-2/3  w-1/3 relative  ">
                 <AniLink paintDrip hex="#3D59E9" to="/project-2">
                   <div className=" work-image-container w-full h-full image-reveal">
@@ -849,7 +874,12 @@ const HorizontalShowcase = () => {
                 </div>
               </div>
             </Slide>
-            <Slide index={3} classNameVisible="hey3" innerClassName="flex items-center justify-center" className={``}>
+            <Slide
+              index={3}
+              classNameVisible="hey3"
+              innerClassName="flex items-center justify-center"
+              className={``}
+            >
               <div className=" h-2/3  w-1/3 relative  ">
                 <AniLink paintDrip hex="#3D59E9" to="/project-3">
                   <div className=" work-image-container w-full h-full image-reveal">
@@ -860,8 +890,8 @@ const HorizontalShowcase = () => {
                   <ul className=" pl-12 text-white md:text-lg xl:text-2xl 2xl:text-3xl font-normal">
                     <li className="py-1 work-project-info-3">UX & UI design</li>
                     <li className="py-1 work-project-info-3">Research</li>
-                    <li className="py-1 work-project-info-3">Frontend development</li>
-                    <li className="py-1 work-project-info-3">Backend development</li>
+                    <li className="py-1 work-project-info-3">Frontend </li>
+                    <li className="py-1 work-project-info-3">Backend </li>
                   </ul>
                   <div className="pl-12 flex pt-2 xl:pt-8 text-white text-3xl xl:text-4xl work-project-info-3">
                     <ButtonBack className="pr-4 xl:pr-6">
@@ -874,7 +904,12 @@ const HorizontalShowcase = () => {
                 </div>
               </div>
             </Slide>
-            <Slide index={4} classNameVisible="hey4" innerClassName="flex items-center justify-center" className={``}>
+            <Slide
+              index={4}
+              classNameVisible="hey4"
+              innerClassName="flex items-center justify-center"
+              className={``}
+            >
               <div className="  h-2/3 w-1/3 relative  ">
                 <AniLink paintDrip hex="#3D59E9" to="/project-4">
                   <div className=" work-image-container  h-full relative z-1 image-reveal">
@@ -900,7 +935,12 @@ const HorizontalShowcase = () => {
                 </div>
               </div>
             </Slide>
-            <Slide index={5} classNameVisible="hey6" innerClassName="flex items-center justify-center" className={``}>
+            <Slide
+              index={5}
+              classNameVisible="hey6"
+              innerClassName="flex items-center justify-center"
+              className={``}
+            >
               <div className="  h-2/3 w-1/3 relative  ">
                 <AniLink paintDrip hex="#3D59E9" to="/project-6">
                   <div className=" work-image-container  h-full relative z-1 image-reveal">
