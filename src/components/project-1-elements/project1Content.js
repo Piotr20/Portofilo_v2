@@ -23,14 +23,24 @@ const Project1Content = () => {
     <section data-scroll-section>
       <Container>
         <div className="w-full flex h-auto">
-          <video className="w-full border-4 border-black lg:h-auto" autoPlay muted loop src={data.allFile.edges[1].node.publicURL} />
+          <video
+            className="w-full border-4 border-black lg:h-auto"
+            autoPlay
+            muted
+            loop
+            src={data.allFile.edges[2].node.publicURL}
+          />
         </div>
 
         <div>
-          <h3 className="font-semibold text-3xl 2xl:text-4xl">Visual identity:</h3>
+          <h3 className="font-semibold text-3xl 2xl:text-4xl">
+            Visual identity:
+          </h3>
           <p className="pt-4 2xl:pt-8 text-lg lg:text-xl 2xl:text-2xl pb-8 2xl:pb-16">
-            Besides website that is performant we wanted to create a website that represents the company's identity. The design we decided to go with
-            in my opinion works perfectly bringing the attention rather then confusing customers.
+            Besides website that is performant we wanted to create a website
+            that represents the company's identity. The design we decided to go
+            with in my opinion works perfectly bringing the attention rather
+            then confusing customers.
           </p>
         </div>
         <div className="py-6 flex flex-col">
@@ -44,10 +54,13 @@ const Project1Content = () => {
           </div>
           <div className="py-6 flex flex-col items-center">
             <div className="md:w-2/3">
-              <h3 className="font-semibold text-3xl 2xl:text-4xl">RWD is the key:</h3>
+              <h3 className="font-semibold text-3xl 2xl:text-4xl">
+                RWD is the key:
+              </h3>
               <p className="pt-4 2xl:pt-8 text-lg lg:text-xl 2xl:text-2xl pb-8 2xl:pb-16">
-                We made sure that the coded solution is working perfectly for all users does not matter if you use desktop or mobile you can be
-                comfortable with using the solution.
+                We made sure that the coded solution is working perfectly for
+                all users does not matter if you use desktop or mobile you can
+                be comfortable with using the solution.
               </p>
             </div>
           </div>
@@ -69,11 +82,16 @@ const Project1Content = () => {
           </div>
 
           <div className="md:w-2/3  pt-6">
-            <h3 className="font-semibold text-3xl 2xl:text-4xl">GSAP animations:</h3>
+            <h3 className="font-semibold text-3xl 2xl:text-4xl">
+              GSAP animations:
+            </h3>
             <p className="pt-4 2xl:pt-8 text-lg lg:text-xl 2xl:text-2xl pb-8 2xl:pb-16">
-              Animations and being able to interact with a website is a fantastic tool in creating engagement for a user ultimetly making them more
-              interested in the product. We decided to use GSAP thanks to it's ease of use and being extremly ligtweight library. We used it also to
-              progressive on scroll animations like the text extending or filter rotating.
+              Animations and being able to interact with a website is a
+              fantastic tool in creating engagement for a user ultimetly making
+              them more interested in the product. We decided to use GSAP thanks
+              to it's ease of use and being extremly ligtweight library. We used
+              it also to progressive on scroll animations like the text
+              extending or filter rotating.
             </p>
           </div>
         </div>
@@ -84,10 +102,13 @@ const Project1Content = () => {
             </div>
           </div>
           <div className="pt-6 md:w-2/3">
-            <h3 className="font-semibold text-3xl 2xl:text-4xl">Gatsby & performance:</h3>
+            <h3 className="font-semibold text-3xl 2xl:text-4xl">
+              Gatsby & performance:
+            </h3>
             <p className="pt-4 2xl:pt-8 text-lg lg:text-xl 2xl:text-2xl pb-8 2xl:pb-16">
-              Whole website is built using gatsby which is React based REST API. Thanks to that we made sure that the website is as performant as it
-              was possible scoring 96 in Lighthouse
+              Whole website is built using gatsby which is React based REST API.
+              Thanks to that we made sure that the website is as performant as
+              it was possible scoring 96 in Lighthouse
             </p>
           </div>
         </div>
@@ -95,7 +116,8 @@ const Project1Content = () => {
           <div className="pt-6 md:w-2/3">
             <h3 className="font-semibold text-3xl 2xl:text-4xl">Sanity CMS:</h3>
             <p className="pt-4 2xl:pt-8 text-lg lg:text-xl 2xl:text-2xl pb-8 2xl:pb-16">
-              For CMS we decided to ho with Sanity since it was a clients choice and in general is a good CMS. We combimed it with Netlify for fast
+              For CMS we decided to ho with Sanity since it was a clients choice
+              and in general is a good CMS. We combimed it with Netlify for fast
               deployment builds.
             </p>
           </div>{" "}
