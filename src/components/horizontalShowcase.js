@@ -960,10 +960,10 @@ const HorizontalShowcase = () => {
                 </AniLink>
                 <div className=" w-full h-1/2 absolute quoter-over-left top-1/2 transform -translate-y-1/2">
                   <ul className=" pl-12 text-white md:text-lg xl:text-2xl 2xl:text-3xl font-normal">
-                    <li className="py-1 work-project-info-1">CMS</li>
-                    <li className="py-1 work-project-info-1">UX design</li>
-                    <li className="py-1 work-project-info-1">Development</li>
-                    <li className="py-1 work-project-info-1">Animations</li>
+                    <li className="py-1 work-project-info-1">Frontend</li>
+                    <li className="py-1 work-project-info-1">Backend</li>
+                    <li className="py-1 work-project-info-1">UX & UI design</li>
+                    <li className="py-1 work-project-info-1">Analytical research</li>
                   </ul>
                   <div className="pl-12 flex pt-2 xl:pt-8 text-white text-3xl xl:text-4xl work-project-info-1">
                     <ButtonBack className="pr-4 xl:pr-6">

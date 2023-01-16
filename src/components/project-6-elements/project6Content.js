@@ -6,7 +6,12 @@ import { graphql, useStaticQuery } from "gatsby";
 const Project6Content = () => {
   const data = useStaticQuery(graphql`
     query BilligAnimationVideoQuery {
-      allFile(filter: { relativeDirectory: { eq: "videos" } }) {
+      allFile(
+        filter: {
+          relativeDirectory: { eq: "videos" }
+          relativePath: { eq: "videos/billig-animation-video.mp4" }
+        }
+      ) {
         edges {
           node {
             id
@@ -28,7 +33,7 @@ const Project6Content = () => {
             autoPlay
             muted
             loop
-            src={data.allFile.edges[1].node.publicURL}
+            src={data.allFile.edges[0].node.publicURL}
           />
         </div>
         <div className="py-6">

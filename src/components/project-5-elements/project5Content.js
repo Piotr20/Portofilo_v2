@@ -6,7 +6,12 @@ import { graphql, useStaticQuery } from "gatsby";
 const Project5Content = () => {
   const data = useStaticQuery(graphql`
     query LeftOverVideoQuery {
-      allFile(filter: { relativeDirectory: { eq: "videos" } }) {
+      allFile(
+        filter: {
+          relativeDirectory: { eq: "videos" }
+          relativePath: { eq: "videos/LeftOverVideoFramed.mp4" }
+        }
+      ) {
         edges {
           node {
             id
@@ -28,7 +33,7 @@ const Project5Content = () => {
               autoPlay
               muted
               loop
-              src={data.allFile.edges[3].node.publicURL}
+              src={data.allFile.edges[0].node.publicURL}
             />
           </div>
           <div className="md:w-3/5 mt-4 md:mt-0">

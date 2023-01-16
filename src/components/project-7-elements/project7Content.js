@@ -6,7 +6,12 @@ import { graphql, useStaticQuery } from "gatsby";
 const Project7Content = () => {
   const data = useStaticQuery(graphql`
     query ArlaVideoQuery {
-      allFile(filter: { relativeDirectory: { eq: "videos" } }) {
+      allFile(
+        filter: {
+          relativeDirectory: { eq: "videos" }
+          relativePath: { eq: "videos/arla-dashboard-video.mp4" }
+        }
+      ) {
         edges {
           node {
             id
