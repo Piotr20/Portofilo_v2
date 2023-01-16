@@ -55,7 +55,7 @@ const Project5Intro = () => {
             </ul>
           </div>
         </div>
-        <div className="py-2 lg:py-4 group">
+        <div className="py-2 lg:py-4 group w-max">
           <a
             className="inline-block group-hover:text-custo-blue transition-colors duration-300"
             href="http://left-over.piotrpospiech.com/#/login"

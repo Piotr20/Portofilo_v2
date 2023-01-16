@@ -4,7 +4,7 @@ import Img from "gatsby-image";
 
 const Project2Image = ({ type }) => {
   const data = useStaticQuery(graphql`
-    query Project1ImagesQuery {
+    query Project2ImagesQuery {
       allFile(filter: { relativeDirectory: { eq: "siguna-project-images" } }) {
         nodes {
           childrenImageSharp {
