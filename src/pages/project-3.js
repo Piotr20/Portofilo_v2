@@ -4,14 +4,14 @@ import React, { useEffect, useRef } from "react";
 import SEO from "../components/Seo";
 import Header from "../components/layout-elements/header";
 import Project3Intro from "../components/project-3-elements/project3Intro";
-import HeroImageLeftOver from "../components/project-3-elements/heroImageLeftOver";
+import HeroImageM4M from "../components/project-3-elements/heroImageM4M";
 import Project3Content from "../components/project-3-elements/project3Content";
 import Project3Tools from "../components/project-3-elements/project3Tools";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
-const Project3 = () => {
+const Project5 = () => {
   const project1Ref = useRef(null);
   useEffect(() => {
     const locoScroll = new LocomotiveScroll({
@@ -41,10 +41,14 @@ const Project3 = () => {
   }, []);
   return (
     <>
-      <SEO title="Project 3" description="Project number 3 page" keywords={["design", "quality", "development"]} />
+      <SEO
+        title="Project 3"
+        description="Project number 3 page"
+        keywords={["design", "quality", "development"]}
+      />
       <main ref={project1Ref} className="scrollContainer">
         <Header />
-        <HeroImageLeftOver />
+        <HeroImageM4M />
         <Project3Intro />
         <Project3Content />
         <Project3Tools />
@@ -53,4 +57,4 @@ const Project3 = () => {
   );
 };
 
-export default Project3;
+export default Project5;

@@ -30,7 +30,8 @@
 .work-heading-3,
 .work-heading-4,
 .work-heading-5,
-.work-heading-6 {
+.work-heading-6,
+.work-heading-7 {
   position: relative;
   display: inline-block;
   transform-origin: left center;
@@ -40,7 +41,8 @@
 .work-heading-3,
 .work-heading-4,
 .work-heading-5,
-.work-heading-6 {
+.work-heading-6,
+.work-heading-7 {
   opacity: 0.3;
   transform: rotate(15deg) translateY(100%);
 }
@@ -49,7 +51,8 @@
 .work-project-info-3,
 .work-project-info-4,
 .work-project-info-5,
-.work-project-info-6 {
+.work-project-info-6,
+.work-project-info-7 {
   opacity: 0;
   transform: translateY(15px);
 }

@@ -2,16 +2,16 @@ import LocomotiveScroll from "locomotive-scroll";
 import "../styles/locomotiveScroll.css";
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import SEO from "../components/Seo";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Header from "../components/layout-elements/header";
+import HeroImageSiguna from "../components/project-2-elements/heroImageSiguna";
 import Project2Intro from "../components/project-2-elements/project2Intro";
-import HeroImageSmokepins from "../components/project-2-elements/heroImageSmokepins";
 import Project2Content from "../components/project-2-elements/project2Content";
 import Project2Tools from "../components/project-2-elements/project2Tools";
 gsap.registerPlugin(ScrollTrigger);
 
-const Project2 = () => {
+const Project1 = () => {
   const project1Ref = useRef(null);
   useEffect(() => {
     const locoScroll = new LocomotiveScroll({
@@ -21,9 +21,7 @@ const Project2 = () => {
     // tell ScrollTrigger to use these proxy methods for the ".smooth-scroll" element since Locomotive Scroll is hijacking things
     ScrollTrigger.scrollerProxy(".scrollContainer", {
       scrollTop(value) {
-        return arguments.length
-          ? locoScroll.scrollTo(value, 0, 0)
-          : locoScroll.scroll.instance.scroll.y;
+        return arguments.length ? locoScroll.scrollTo(value, 0, 0) : locoScroll.scroll.instance.scroll.y;
       }, // we don't have to define a scrollLeft because we're only scrolling vertically.
       getBoundingClientRect() {
         return {
@@ -34,9 +32,7 @@ const Project2 = () => {
         };
       },
       // LocomotiveScroll handles things completely differently on mobile devices - it doesn't even transform the container at all! So to get the correct behavior and avoid jitters, we should pin things with position: fixed on mobile. We sense it by checking to see if there's a transform applied to the container (the LocomotiveScroll-controlled element).
-      pinType: document.querySelector(".scrollContainer").style.transform
-        ? "transform"
-        : "fixed",
+      pinType: document.querySelector(".scrollContainer").style.transform ? "transform" : "fixed",
     }); // each time the window updates, we should refresh ScrollTrigger and then update LocomotiveScroll.
     ScrollTrigger.addEventListener("load", () => locoScroll.update());
 
@@ -52,7 +48,7 @@ const Project2 = () => {
       />
       <main ref={project1Ref} className="scrollContainer">
         <Header />
-        <HeroImageSmokepins />
+        <HeroImageSiguna />
         <Project2Intro />
         <Project2Content />
         <Project2Tools />
@@ -61,4 +57,4 @@ const Project2 = () => {
   );
 };
 
-export default Project2;
+export default Project1;

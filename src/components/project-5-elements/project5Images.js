@@ -2,10 +2,10 @@ import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import Img from "gatsby-image";
 
-const Project3Image = ({ type, className }) => {
+const Project5Image = ({ type, className }) => {
   const data = useStaticQuery(graphql`
     query Project5ImagesQuery {
-      allFile(filter: { relativeDirectory: { eq: "made4men-project-images" } }) {
+      allFile(filter: { relativeDirectory: { eq: "leftover-project-images" } }) {
         nodes {
           childrenImageSharp {
             fluid(maxWidth: 2000, quality: 100) {
@@ -19,8 +19,13 @@ const Project3Image = ({ type, className }) => {
     }
   `);
 
-  const properImageData = data.allFile.nodes.find((image) => image.name === `made4men-${type}`);
+  const properImageData = data.allFile.nodes.find((image) => image.name === `leftover-${type}`);
 
-  return <Img style={{ height: "100%", width: "100%" }} fluid={properImageData && properImageData.childrenImageSharp[0].fluid} />;
+  return (
+    <Img
+      style={{ height: "100%", width: "100%" }}
+      fluid={properImageData && properImageData.childrenImageSharp[0].fluid}
+    />
+  );
 };
-export default Project3Image;
+export default Project5Image;

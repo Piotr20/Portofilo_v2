@@ -4,10 +4,8 @@ import Img from "gatsby-image";
 
 const Project2Image = ({ type }) => {
   const data = useStaticQuery(graphql`
-    query Project2ImagesQuery {
-      allFile(
-        filter: { relativeDirectory: { eq: "smokepins-project-images" } }
-      ) {
+    query Project1ImagesQuery {
+      allFile(filter: { relativeDirectory: { eq: "siguna-project-images" } }) {
         nodes {
           childrenImageSharp {
             fluid(maxWidth: 2000, quality: 100) {
@@ -27,12 +25,8 @@ const Project2Image = ({ type }) => {
       {data.allFile.nodes.map((image, i) => {
         return (
           <div key={i}>
-            {image.name === `smokepins-${type}` ? (
-              <Img
-                style={{ height: "100%", width: "100%" }}
-                imgStyle={{ objectPosition: "95% top" }}
-                fluid={image.childrenImageSharp[0].fluid}
-              />
+            {image.name === `${type}` ? (
+              <Img style={{ height: "100%", width: "100%" }} fluid={image.childrenImageSharp[0].fluid} />
             ) : (
               ""
             )}

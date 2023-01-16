@@ -1,14 +1,14 @@
 import LocomotiveScroll from "locomotive-scroll";
 import "../styles/locomotiveScroll.css";
 import React, { useEffect, useRef } from "react";
-import SEO from "../components/Seo";
 import Header from "../components/layout-elements/header";
+import { gsap } from "gsap";
+import SEO from "../components/Seo";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import HeroImageBilligAnimation from "../components/project-6-elements/heroImageBilligAnimation";
 import Project6Intro from "../components/project-6-elements/project6Intro";
-import HeroImageArla from "../components/project-6-elements/heroImageArla";
 import Project6Content from "../components/project-6-elements/project6Content";
 import Project6Tools from "../components/project-6-elements/project6Tools";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const Project6 = () => {
@@ -41,10 +41,14 @@ const Project6 = () => {
   }, []);
   return (
     <>
-      <SEO title="Project 3" description="Project number 3 page" keywords={["design", "quality", "development"]} />
+      <SEO
+        title="Project 6"
+        description="Project number 6 page"
+        keywords={["design", "quality", "development"]}
+      />
       <main ref={project1Ref} className="scrollContainer">
         <Header />
-        <HeroImageArla />
+        <HeroImageBilligAnimation />
         <Project6Intro />
         <Project6Content />
         <Project6Tools />

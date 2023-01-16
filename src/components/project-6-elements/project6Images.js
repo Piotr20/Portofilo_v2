@@ -2,10 +2,10 @@ import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import Img from "gatsby-image";
 
-const Project6Image = ({ type, className }) => {
+const Project6Image = ({ type }) => {
   const data = useStaticQuery(graphql`
     query Project6ImagesQuery {
-      allFile(filter: { relativeDirectory: { eq: "arla-project-images" } }) {
+      allFile(filter: { relativeDirectory: { eq: "billig-animation-project-images" } }) {
         nodes {
           childrenImageSharp {
             fluid(maxWidth: 2000, quality: 100) {
@@ -19,8 +19,24 @@ const Project6Image = ({ type, className }) => {
     }
   `);
 
-  const properImageData = data.allFile.nodes.find((image) => image.name === `arla-${type}`);
-
-  return <Img style={{ height: "100%", width: "100%" }} fluid={properImageData && properImageData.childrenImageSharp[0].fluid} />;
+  return (
+    <div>
+      {data.allFile.nodes.map((image, i) => {
+        return (
+          <div key={i}>
+            {image.name === `billig-animation-${type}` ? (
+              <Img
+                style={{ height: "100%", width: "100%" }}
+                imgStyle={{ objectPosition: "95% top" }}
+                fluid={image.childrenImageSharp[0].fluid}
+              />
+            ) : (
+              ""
+            )}
+          </div>
+        );
+      })}
+    </div>
+  );
 };
 export default Project6Image;

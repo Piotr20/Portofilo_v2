@@ -3,8 +3,8 @@ import "../styles/locomotiveScroll.css";
 import React, { useEffect, useRef } from "react";
 import SEO from "../components/Seo";
 import Header from "../components/layout-elements/header";
+import HeroImageLeftOver from "../components/project-5-elements/heroImageLeftOver";
 import Project5Intro from "../components/project-5-elements/project5Intro";
-import HeroImageM4M from "../components/project-5-elements/heroImageM4M";
 import Project5Content from "../components/project-5-elements/project5Content";
 import Project5Tools from "../components/project-5-elements/project5Tools";
 import { gsap } from "gsap";
@@ -41,10 +41,14 @@ const Project5 = () => {
   }, []);
   return (
     <>
-      <SEO title="Project 3" description="Project number 3 page" keywords={["design", "quality", "development"]} />
+      <SEO
+        title="Project 5"
+        description="Project number 5 page"
+        keywords={["design", "quality", "development"]}
+      />
       <main ref={project1Ref} className="scrollContainer">
         <Header />
-        <HeroImageM4M />
+        <HeroImageLeftOver />
         <Project5Intro />
         <Project5Content />
         <Project5Tools />
