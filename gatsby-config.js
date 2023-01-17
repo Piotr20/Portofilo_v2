@@ -1,8 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "Portfolio",
-    description:
-      "Portfolio page of Piotr Pospiech developer and designer based in Aarhus Denmark",
+    description: "Portfolio page of Piotr Pospiech developer and designer based in Aarhus Denmark",
     url: "https://billig-animation.piotrpospiech.com/",
     author: "Piotr Pospiech",
   },

@@ -8,13 +8,13 @@ const Project1Intro = () => {
     <section data-scroll-section>
       <Container>
         <h2 className=" w-full pt-4  2xl:pt-12 text-3xl lg:text-4xl 2xl:text-5xl font-semibold">
-          IMPACT has its name not without a reason. As a digital consultancy, built with people for people, it
-          wants to bring a change to the eCommerce business and digitally transform other brands. It believes
-          that commerce is not only transactions - it’s building long-lasting relationships.
+          IMPACT is a digital consultancy that aims to improve eCommerce and transform brands through building
+          long-lasting relationships, rather than just transactions.
         </h2>
         <p className=" pt-4 2xl:pt-8 text-lg lg:text-xl 2xl:text-2xl pb-8 2xl:pb-16">
           This project was a part of our Bachelor project. Our focus was to analyze and create a solution that
-          could improve internal communication between employees at IMPACT.
+          could improve internal communication between employees at IMPACT. With our solution we reduced the
+          time vaste by 95% which transpiles to a substancial savings from the financial side as well.
         </p>
         <div className="w-full flex flex-col md:flex-row md:justify-between">
           <div className=" lg:w-1/5 py-2 lg:py-4">
