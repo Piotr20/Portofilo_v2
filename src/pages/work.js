@@ -132,6 +132,18 @@ const WorkPage = () => {
       duration: 0.2,
       ease: "power4.easeOut",
     });
+    gsap.from(".project-item-7", {
+      scrollTrigger: {
+        trigger: ".project-container-7",
+        scroller: ".scrollContainer",
+        start: "top 65%",
+      },
+      y: 30,
+      opacity: 0,
+      stagger: 0.05,
+      duration: 0.2,
+      ease: "power4.easeOut",
+    });
 
     // each time the window updates, we should refresh ScrollTrigger and then update LocomotiveScroll.
     ScrollTrigger.addEventListener("load", () => locoScroll.update());
@@ -141,7 +153,11 @@ const WorkPage = () => {
   }, []);
   return (
     <>
-      <SEO title="Work" description="page with all the projects gallery" keywords={["design", "quality", "development"]} />
+      <SEO
+        title="Work"
+        description="page with all the projects gallery"
+        keywords={["design", "quality", "development"]}
+      />
       <main ref={scrollRef} className="scrollContainer">
         <Header />
         <Container>

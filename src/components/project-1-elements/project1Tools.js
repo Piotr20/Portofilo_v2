@@ -50,6 +50,24 @@ const Project1Tools = () => {
           </div>
         </div>
         <div className="self-center">
+          <div className="toolkit-item h-16 w-16 2xl:w-20 2xl:h-20">
+            <svg
+              style={{
+                width: "100%",
+                height: "100%",
+              }}
+              height="80"
+              viewBox="3.7 3.7 43.6 43.6"
+              width="2500"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="m47.3 3.7v21.8l-10.9 10.9-10.9 10.9-10.9-10.9 10.9-10.9v.1-.1z" fill="#00000" />
+              <path d="m47.3 25.5v21.8l-10.9-10.9z" fill="#000000" />
+              <path d="m25.5 25.5-10.9 10.9-10.9 10.9v-43.6l10.9 10.9z" fill="#000000" />
+            </svg>
+          </div>
+        </div>
+        <div className="self-center">
           <SiMongodb className="toolkit-item w-16 h-16 2xl:w-20 2xl:h-20" />
         </div>
         <div className="self-center">

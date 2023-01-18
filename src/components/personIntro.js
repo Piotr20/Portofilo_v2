@@ -5,7 +5,7 @@ import Img from "gatsby-image";
 const PersonIntro = () => {
   const data = useStaticQuery(graphql`
     query IntroImageQuery {
-      allFile(filter: { name: { eq: "me-standing" } }) {
+      allFile(filter: { name: { eq: "me-impact" } }) {
         edges {
           node {
             id

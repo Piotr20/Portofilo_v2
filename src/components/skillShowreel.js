@@ -11,19 +11,19 @@ const SkillsShowreel = () => {
         <ul className="text-xl 2xl:text-2xl mt-2">
           <li className="skills-item-1">- Frontend development</li>
           <li className="skills-item-1">- Backend development</li>
-          <li className="skills-item-1">- 2D & 3D web animations</li>
+          <li className="skills-item-1">- Database</li>
           <li className="skills-item-1">- CMS</li>
           <li className="skills-item-1">- SEO</li>
         </ul>
       </div>
       <div className="mt-6 md:mt-0 skillst-container-2">
-        <h2 className="text-4xl 2xl:text-5xl contact-item-2 md: font-bold">Digital design</h2>
+        <h2 className="text-4xl 2xl:text-5xl contact-item-2 md: font-bold">Design</h2>
         <ul className="text-xl 2xl:text-2xl mt-2">
           <li className="skills-item-2">- UX & UI design</li>
           <li className="skills-item-2">- Motion graphics</li>
           <li className="skills-item-2">- 2D animations</li>
-          <li className="skills-item-2">- Graphic design</li>
           <li className="skills-item-2">- Prototyping</li>
+          <li className="skills-item-2">- Testing</li>
         </ul>
       </div>
     </section>
