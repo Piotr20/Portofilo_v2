@@ -19,51 +19,53 @@ const Project3Tools = () => {
   return (
     <section
       data-scroll-section
-      className="toolkit-section bg-gray-custom w-full 5 flex flex-col items-center mt-12"
+      className="toolkit-section bg-black w-full 5 flex flex-col items-center mt-12"
     >
-      <h2 className="text-3xl md:text-5xl xl:text-5xl font-bold text-center py-5 lg:py-8">Used tools:</h2>
+      <h2 className="text-3xl md:text-5xl xl:text-5xl font-bold text-center py-5 lg:py-8 text-white">
+        Used tools:
+      </h2>
       <div className="w-10/12 2xl:w-8/12 grid grid-cols-3 gap-3 justify-items-center md:flex md:flex-wrap md:justify-center  pb-12 md:pb-25">
         <div className="self-center">
-          <SiPhp className="toolkit-item w-16 h-16 2xl:w-20 2xl:h-20" />
+          <SiPhp className="toolkit-item text-white w-16 h-16 2xl:w-20 2xl:h-20" />
         </div>
         <div className="self-center">
-          <SiSymfony className="toolkit-item w-16 h-16 2xl:w-20 2xl:h-20" />
+          <SiSymfony className="toolkit-item text-white w-16 h-16 2xl:w-20 2xl:h-20" />
         </div>
         <div className="self-center">
-          <SiMysql className="toolkit-item w-16 h-16 2xl:w-20 2xl:h-20" />
+          <SiMysql className="toolkit-item text-white w-16 h-16 2xl:w-20 2xl:h-20" />
         </div>
         <div className="self-center">
-          <SiRedis className="toolkit-item w-16 h-16 2xl:w-20 2xl:h-20" />
+          <SiRedis className="toolkit-item text-white w-16 h-16 2xl:w-20 2xl:h-20" />
         </div>
         <div className="self-center">
-          <SiDocker className="toolkit-item w-16 h-16 2xl:w-20 2xl:h-20" />
+          <SiDocker className="toolkit-item text-white w-16 h-16 2xl:w-20 2xl:h-20" />
         </div>
         <div className="self-center">
-          <SiComposer className="toolkit-item w-16 h-16 2xl:w-20 2xl:h-20" />
+          <SiComposer className="toolkit-item text-white w-16 h-16 2xl:w-20 2xl:h-20" />
         </div>
         <div className="self-center">
-          <SiAlgolia className="toolkit-item w-16 h-16 2xl:w-20 2xl:h-20" />
+          <SiAlgolia className="toolkit-item text-white w-16 h-16 2xl:w-20 2xl:h-20" />
         </div>
         <div className="self-center">
-          <SiWebpack className="toolkit-item w-16 h-16 2xl:w-20 2xl:h-20" />
+          <SiWebpack className="toolkit-item text-white w-16 h-16 2xl:w-20 2xl:h-20" />
         </div>
         <div className="self-center">
-          <SiNpm className="toolkit-item w-16 h-16 2xl:w-20 2xl:h-20" />
+          <SiNpm className="toolkit-item text-white w-16 h-16 2xl:w-20 2xl:h-20" />
         </div>
         <div className="self-center">
-          <SiJavascript className="toolkit-item w-16 h-16 2xl:w-20 2xl:h-20" />
+          <SiJavascript className="toolkit-item text-white w-16 h-16 2xl:w-20 2xl:h-20" />
         </div>
         <div className="self-center">
-          <FaVuejs className="toolkit-item w-16 h-16 2xl:w-20 2xl:h-20" />
+          <FaVuejs className="toolkit-item text-white w-16 h-16 2xl:w-20 2xl:h-20" />
         </div>
         <div className="self-center">
-          <SiSass className="toolkit-item w-16 h-16 2xl:w-20 2xl:h-20" />
+          <SiSass className="toolkit-item text-white w-16 h-16 2xl:w-20 2xl:h-20" />
         </div>
         <div className="self-center">
-          <FiFigma className="toolkit-item w-16 h-16 2xl:w-20 2xl:h-20" />
+          <FiFigma className="toolkit-item text-white w-16 h-16 2xl:w-20 2xl:h-20" />
         </div>
         <div className="self-center">
-          <RiGitlabFill className="toolkit-item w-16 h-16 2xl:w-20 2xl:h-20" />
+          <RiGitlabFill className="toolkit-item text-white w-16 h-16 2xl:w-20 2xl:h-20" />
         </div>
       </div>
     </section>

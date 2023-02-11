@@ -7,8 +7,7 @@ import "../styles/locomotiveScroll.css";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import AboutIntro from "../components/aboutIntroSection";
-import LongTextAbout from "../components/longTextAbout";
-import SkillsShowreel from "../components/skillShowreel";
+import Recomendations from "../components/recomendations";
 import SEO from "../components/Seo";
 import Cv from "../components/cv";
 
@@ -119,8 +118,7 @@ const AboutPage = () => {
         <Header />
         <Container>
           <AboutIntro />
-          <LongTextAbout />
-          <SkillsShowreel />{" "}
+          <Recomendations />
         </Container>
         <MyToolkit />
         <Container>

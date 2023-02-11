@@ -9,27 +9,52 @@ const Header = () => {
   const [showNav, setShowNav] = useState(false);
 
   return (
-    <header className={`flex w-full fixed z-50 pointer-events-none justify-between items-start lg:items-center`}>
+    <header
+      className={`flex w-full fixed z-50 pointer-events-none justify-between items-start lg:items-center`}
+    >
       <div className="w-17 logo pointer-events-auto h-24 md:w-20 md:h-26 xl:w-24 xl:h-30 bg-black flex items-center justify-center">
         <AniLink paintDrip hex="#3D59E9" className="text-white nav-link pointer-events-auto" to="/">
           <Logo />
         </AniLink>
       </div>
       <nav className="hidden lg:flex lg:mr-12 xl:mr-20 md:text-xl xl:text-2xl ">
-        <AniLink paintDrip hex="#3D59E9" className="lg:mx-8 py-1 nav-link xl:mx-12 pointer-events-auto underline-custom-hover" to="/about">
+        <AniLink
+          paintDrip
+          hex="#3D59E9"
+          className="lg:mx-8 py-1 nav-link xl:mx-12 pointer-events-auto underline-custom-hover"
+          to="/about"
+        >
           About
         </AniLink>
-        <AniLink paintDrip hex="#3D59E9" className="lg:mx-8 py-1 nav-link xl:mx-12 pointer-events-auto underline-custom-hover" to="/work">
+        <AniLink
+          paintDrip
+          hex="#3D59E9"
+          className="lg:mx-8 py-1 nav-link xl:mx-12 pointer-events-auto underline-custom-hover"
+          to="/work"
+        >
           Work
         </AniLink>
-        <AniLink paintDrip hex="#3D59E9" className="lg:mx-8 py-1 nav-link xl:mx-12 pointer-events-auto underline-custom-hover" to="/labs">
+        <AniLink
+          paintDrip
+          hex="#3D59E9"
+          className="lg:mx-8 py-1 nav-link xl:mx-12 pointer-events-auto underline-custom-hover"
+          to="/labs"
+        >
           Labs
         </AniLink>
-        <AniLink paintDrip hex="#3D59E9" className="lg:mx-8 py-1 nav-link xl:mx-12 pointer-events-auto underline-custom-hover" to="/contact">
+        <AniLink
+          paintDrip
+          hex="#3D59E9"
+          className="lg:mx-8 py-1 nav-link xl:mx-12 pointer-events-auto underline-custom-hover"
+          to="/contact"
+        >
           Contact
         </AniLink>
       </nav>
-      <button onClick={() => setShowNav(!showNav)} className="burger-button mr-2 z-50 lg:hidden relative pointer-events-auto">
+      <button
+        onClick={() => setShowNav(!showNav)}
+        className="burger-button mr-2 z-50 lg:hidden relative pointer-events-auto"
+      >
         <MenuIcon open={showNav} />
       </button>
       <div
