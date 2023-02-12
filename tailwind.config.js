@@ -19,6 +19,7 @@ module.exports = {
       black: "#171717",
       "gray-custom": "#EEEEEE",
       "custo-blue": "#3D59E9",
+      "transparent-white": "#ffffff95",
 
       white: colors.white,
       gray: colors.coolGray,
@@ -278,7 +279,16 @@ module.exports = {
         '"Noto Color Emoji"',
       ],
       serif: ["ui-serif", "Georgia", "Cambria", '"Times New Roman"', "Times", "serif"],
-      mono: ["ui-monospace", "SFMono-Regular", "Menlo", "Monaco", "Consolas", '"Liberation Mono"', '"Courier New"', "monospace"],
+      mono: [
+        "ui-monospace",
+        "SFMono-Regular",
+        "Menlo",
+        "Monaco",
+        "Consolas",
+        '"Liberation Mono"',
+        '"Courier New"',
+        "monospace",
+      ],
     },
     fontSize: {
       xs: ["0.75rem", { lineHeight: "1rem" }],
@@ -758,7 +768,8 @@ module.exports = {
     transitionProperty: {
       none: "none",
       all: "all",
-      DEFAULT: "background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter",
+      DEFAULT:
+        "background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter",
       colors: "background-color, border-color, color, fill, stroke",
       opacity: "opacity",
       shadow: "box-shadow",

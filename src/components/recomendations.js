@@ -1,20 +1,21 @@
-import React, { useEffect, useRef } from "react";
+import React, { useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
+import { MdKeyboardArrowDown } from "@react-icons/all-files/md/MdKeyboardArrowDown";
+
 gsap.registerPlugin(ScrollTrigger);
 
 const Recomendations = () => {
-  const sectionRef = useRef(null);
+  const [showMore, setshowMore] = useState(false);
 
-  useEffect(() => {}, []);
   return (
     <section data-scroll-section className="text-trigger">
       <h1 className="self-start text-4xl md:text-5xl xl:text-6xl xl:leading-snug font-bold mb-4">
         My references
       </h1>
-      <Carousel autoPlay={true} emulateTouch={true} infiniteLoop={true} renderIndicator={false}>
+      <Carousel emulateTouch={true} infiniteLoop={true} renderIndicator={false}>
         <div className="h-full w-full relative cursor-pointer">
           <h3 className="text-lg lg:text-2xl italic text-left">
             <span className="">"</span>
@@ -33,8 +34,11 @@ const Recomendations = () => {
             <br /> Lead Frontend Engineer, IMPACT A/S
           </h4>
         </div>
-        <div className="h-full w-full relative cursor-pointer">
-          <h3 className="text-lg lg:text-2xl italic text-left">
+        <div className="h-full w-full relative cursor-pointer ">
+          <h3
+            className={`text-lg lg:text-2xl italic text-left relative transition-all duration-200 
+            ${showMore ? `max-h-full overflow-visible` : `max-h-108 lg:max-h-48 overflow-hidden`} `}
+          >
             <span className="">"</span>I have had the pleasure of being Piotr’s manager at Geni - the tech arm
             of Firtal which is a subsidiary of Matas A/S. Piotr worked for us as Student Developer whilst
             completing his education. He joined in September, 2021, until February, 2023. Piotr did splendid
@@ -48,6 +52,26 @@ const Recomendations = () => {
             Later Piotr took over as our sole frontend developer for a period of two months while we looked
             for a fulltime in-house frontender. A gap he bridged well.
             <span>"</span>
+            <span
+              className={`transition-all duration-200 absolute bottom-0 left-0 w-full h-24 lg:h-12 flex justify-center items-end 
+              ${
+                showMore ? `` : `bg-gradient-to-t via-transparent-white blur-3xl from-white to-transparent`
+              } `}
+              onClick={() => {
+                setshowMore(!showMore);
+              }}
+            >
+              <div
+                className={`rounded-full bg-custo-blue hover:bg-black transition-colors flex items-center justify-center ${
+                  showMore ? `opacity-0` : `opacity-100`
+                }`}
+              >
+                <MdKeyboardArrowDown
+                  className={`text-white w-10 h-10 lg:w-8 lg:h-8 transform transition-none
+                  ${showMore ? `rotate-180` : `rotate-0`}`}
+                />
+              </div>
+            </span>
           </h3>
           <h4 className="text-lg lg:text-2xl mt-4 lg:mt-6 font-bold text-left">
             Dan Kristensen Hørlyck
