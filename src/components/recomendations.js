@@ -39,18 +39,32 @@ const Recomendations = () => {
             className={`text-lg lg:text-2xl italic text-left relative transition-all duration-200 
             ${showMore ? `max-h-full overflow-visible` : `max-h-108 lg:max-h-48 overflow-hidden`} `}
           >
-            <span className="">"</span>I have had the pleasure of being Piotr’s manager at Geni - the tech arm
-            of Firtal which is a subsidiary of Matas A/S. Piotr worked for us as Student Developer whilst
-            completing his education. He joined in September, 2021, until February, 2023. Piotr did splendid
-            work at Geni. He started out evaluating Bubble.io and a built-from-scratch app as alternatives to
-            Retool.com. Next task was building the initial prototype of an RMA system to handle refunds and
-            resends of orders hosted at Vercel.com. This system is now in production as a Retool app, but it
-            started with Piotr’s prototype. The crown jewel of Piotr’s contributions came as he joined our
-            Shopware project. We launched Made4men.dk in 2022. Among other things, Piotr completed the “Tjek
-            min ordre”-page and styled our Clerk-based product feeds. He was instrumental in providing
-            technical feedback to the external bureau who - at the time - developed our frontend/storefront.
-            Later Piotr took over as our sole frontend developer for a period of two months while we looked
-            for a fulltime in-house frontender. A gap he bridged well.
+            <span>"</span>I have had the pleasure of being Piotr’s manager at Geni - the tech arm of Firtal
+            which is a subsidiary of Matas A/S.
+            <br />
+            <br />
+            Piotr worked for us as Student Developer whilst completing his education. He joined in September,
+            2021, until February, 2023. Piotr did splendid work at Geni. He started out evaluating Bubble.io
+            and a built-from-scratch app as alternatives to Retool.com.
+            <br />
+            <br />
+            Next task was building the initial prototype of an RMA system to handle refunds and resends of
+            orders hosted at Vercel.com. This system is now in production as a Retool app, but it started with
+            Piotr’s prototype made with Vue.js.
+            <br />
+            <br />
+            The crown jewel of Piotr’s contributions came as he joined our Shopware project. We launched
+            Made4men.dk in March 2022 and ever since he has contributed – 11 months in total. Among other
+            things, Piotr completed the “Tjek min ordre”-page and styled our Clerk-based product
+            feeds/sliders. He was instrumental in providing technical feedback to the external bureau who - at
+            the time - developed our frontend/storefront. He also helped style and animate the search results
+            coming from Algolia. Later Piotr took over as our sole frontend developer for a period of two
+            months while we looked for a fulltime in-house frontender. A gap he bridged well. Piotr can build
+            shopping experiences for Shopware 6 using backend+frontend Vue.js and Symfony (PHP).
+            <br />
+            <br />
+            We thank Piotr for his many contributions and wish him our very best in his next (full time)
+            position.
             <span>"</span>
             <span
               className={`transition-all duration-200 absolute bottom-0 left-0 w-full h-24 lg:h-12 flex justify-center items-end 
